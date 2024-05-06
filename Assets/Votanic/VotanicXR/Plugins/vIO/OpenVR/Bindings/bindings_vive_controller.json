@@ -1,0 +1,150 @@
+{
+  "action_manifest_version": 1,
+  "bindings": {
+    "/actions/main": {
+      "sources": [
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/main/in/RightTrigger"
+            },
+            "touch": {
+              "output": "/actions/main/in/RightTriggerT"
+            },
+            "pull": {
+              "output": "/actions/main/in/RightFinger1"
+            }
+          },
+          "mode": "trigger",
+          "path": "/user/hand/right/input/trigger"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/main/in/RightTouchPad"
+            },
+            "touch": {
+              "output": "/actions/main/in/RightTouchPadT"
+            },
+            "position": {
+              "output": "/actions/main/in/RightThumb1"
+            }
+          },
+          "mode": "trackpad",
+          "path": "/user/hand/right/input/trackpad"
+        },
+        {
+          "inputs": {
+            "button": {
+              "output": "/actions/main/in/RightGrip"
+            },
+            "touch": {
+              "output": "/actions/main/in/RightGripT"
+            }
+          },
+          "mode": "button",
+          "path": "/user/hand/right/input/grip"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/main/in/RightMenu"
+            },
+            "touch": {
+              "output": "/actions/main/in/RightMenuT"
+            }
+          },
+          "mode": "button",
+          "path": "/user/hand/right/input/application_menu"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/main/in/LeftTrigger"
+            },
+            "touch": {
+              "output": "/actions/main/in/LeftTriggerT"
+            },
+            "pull": {
+              "output": "/actions/main/in/LeftFinger1"
+            }
+          },
+          "mode": "trigger",
+          "path": "/user/hand/left/input/trigger"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/main/in/LeftTouchPad"
+            },
+            "touch": {
+              "output": "/actions/main/in/LeftTouchPadT"
+            },
+            "position": {
+              "output": "/actions/main/in/LeftThumb1"
+            }
+          },
+          "mode": "trackpad",
+          "path": "/user/hand/left/input/trackpad"
+        },
+        {
+          "inputs": {
+            "button": {
+              "output": "/actions/main/in/LeftGrip"
+            },
+            "touch": {
+              "output": "/actions/main/in/LeftGripT"
+            }
+          },
+          "mode": "button",
+          "path": "/user/hand/left/input/grip"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/main/in/LeftMenu"
+            },
+            "touch": {
+              "output": "/actions/main/in/LeftMenuT"
+            }
+          },
+          "mode": "button",
+          "path": "/user/hand/left/input/application_menu"
+        }
+      ],
+      "haptics": [
+        {
+          "output": "/actions/main/in/RightVibration",
+          "path": "/user/hand/right/output/haptic"
+        },
+        {
+          "output": "/actions/main/in/LeftVibration",
+          "path": "/user/hand/left/output/haptic"
+        }
+      ],
+      "poses": [
+        {
+          "output": "/actions/main/in/HandPoseLeft",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/main/in/HandPoseRight",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "skeleton": [
+        {
+          "output": "/actions/main/in/HandSkeletonLeft",
+          "path": "/user/hand/left/input/skeleton/left"
+        },
+        {
+          "output": "/actions/main/in/HandSkeletonRight",
+          "path": "/user/hand/right/input/skeleton/right"
+        }
+      ]
+    }
+  },
+  "controller_type": "vive_controller",
+  "description": "Default Vive Controller bindings for SteamVR Home.",
+  "name": "Default Vive Controller Bindings"
+}

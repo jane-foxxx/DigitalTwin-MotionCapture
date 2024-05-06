@@ -1,0 +1,2899 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Votanic.vNet</name>
+    </assembly>
+    <members>
+        <member name="T:Votanic.vNet.Database.Task">
+            <summary>
+            MetaInfo Table of Applcation Database. 
+            <br></br> 應用程式數據庳的任務表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Task.TaskID">
+            <summary>
+            Task unique ID. <br></br> 任務唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Task.Name">
+            <summary>
+            Task name. <br></br> 任務名稱。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Task.Index">
+            <summary>
+            Task index. <br></br> 任務編號。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Task.Score">
+            <summary>
+            Task score. <br></br> 任務得分。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Task.Description">
+            <summary>
+            Task Description. <br></br> 任務描述。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.TaskKey">
+            <summary>
+            Attribute type for searching tasks.
+            <br></br> 搜尋任務的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskKey.Any">
+            <summary>
+            Any attribute/ <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskKey.ID">
+            <summary>
+            Task ID/ <br></br> 任務識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskKey.Name">
+            <summary>
+            Task Name/ <br></br> 任務名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskKey.Index">
+            <summary>
+            Task Index/ <br></br> 任務編號。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskKey.Score">
+            <summary>
+            Task Score/ <br></br> 任務得分。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskKey.Description">
+            <summary>
+            Task Description. <br></br> 任務描述。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.Session">
+            <summary>
+            Session Table of Application Database. 
+            <br></br> 應用程式數據庳的場節表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Session.SessionID">
+            <summary>
+            Session unique ID. <br></br> 場節唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Session.Start">
+            <summary>
+            Start date time. <br></br> 開始日期時間。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Session.End">
+            <summary>
+            End date time. <br></br> 結束日期時間。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.SessionKey">
+            <summary>
+            Attribute type for searching sessions.
+            <br></br> 搜尋場節的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionKey.ID">
+            <summary>
+            Session ID. <br></br> 場節識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionKey.Start">
+            <summary>
+            Start date time. <br></br> 開始日期及時間。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionKey.End">
+            <summary>
+            End date time. <br></br> 結束日期及時間。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.PlayerSession">
+            <summary>
+            Player Session Table of Applcation Database. 
+            <br></br> 應用程式數據庳的使用者場節表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.PlayerSession.PlayerSessionID">
+            <summary>
+            Player Session unique ID. <br></br> 玩家場節唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.PlayerSession.SessionID">
+            <summary>
+            Session identifier. <br></br> 場節識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.PlayerSession.UserID">
+            <summary>
+            User identifier. <br></br> 使用者識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.PlayerSession.PlayerID">
+            <summary>
+            Player identifier. <br></br> 玩家識別碼。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.PlayerSessionKey">
+            <summary>
+            Attribute type for searching user sessions.
+            <br></br> 搜尋使用者場節的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerSessionKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerSessionKey.ID">
+            <summary>
+            Player Session ID. <br></br> 玩家場節識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerSessionKey.SessionID">
+            <summary>
+            Session ID. <br></br> 場節識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerSessionKey.UserID">
+            <summary>
+            User ID. <br></br> 使用者識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerSessionKey.PlayerID">
+            <summary>
+            Player ID. <br></br> 玩家識別碼。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.SessionDetail">
+            <summary>
+            Session Detail Table of Application Database. 
+            <br></br> 應用程式數據庳的場節詳述表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.SessionDetail.SessionDetailID">
+            <summary>
+            Session Detail unique ID. <br></br> 場節詳述唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.SessionDetail.PlayerSessionID">
+            <summary>
+            Related player session ID. <br></br> 相關玩家場節識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.SessionDetail.Index">
+            <summary>
+            Session Detail index. <br></br> 場節詳述編號。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.SessionDetail.TaskID">
+            <summary>
+            Task ID. <br></br> 任務識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.SessionDetail.TaskResult">
+            <summary>
+            Task result. <br></br> 任務結果。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.SessionDetail.Timestamp">
+            <summary>
+            The date time when the task is recorded. <br></br> 任務被記錄的日期時間。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.SessionDetailKey">
+            <summary>
+            Attribute type for searching session details.
+            <br></br> 搜尋場節詳述的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionDetailKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionDetailKey.ID">
+            <summary>
+            Session Detail ID. <br></br> 場節詳述識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionDetailKey.PlayerSessionID">
+            <summary>
+            Related player session ID. <br></br> 相關玩家場節識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionDetailKey.Index">
+            <summary>
+            Session Detail index. <br></br> 場節詳述編號。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionDetailKey.TaskID">
+            <summary>
+            Task ID. <br></br> 任務識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionDetailKey.TaskResult">
+            <summary>
+            Task result. <br></br> 任務結果。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SessionDetailKey.Timestamp">
+            <summary>
+            The date time when the task is recorded. <br></br> 任務被記錄的日期時間。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.MetaInfo">
+            <summary>
+            Meta Info Table for store anything. 
+            <br></br> 儲存任何數據的元信息表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.MetaInfo.MetaInfoID">
+            <summary>
+            Meta Info unique ID. <br></br> 元信息唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.MetaInfo.Table">
+            <summary>
+            Related table name. <br></br> 相關表格名稱。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.MetaInfo.RefID">
+            <summary>
+            ID on related table. <br></br> 相關表格中的識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.MetaInfo.Key">
+            <summary>
+            Attribute name. <br></br> 屬性名稱。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.MetaInfo.Value">
+            <summary>
+            Content of Attribute. <br></br> 屬性內容。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.MetaInfoKey">
+            <summary>
+            Attribute type for searching meta infos.
+            <br></br> 搜尋元信息的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.MetaInfoKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.MetaInfoKey.ID">
+            <summary>
+            Meta Info ID. <br></br> 元信息識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.MetaInfoKey.Table">
+            <summary>
+            Related table name. <br></br> 相關表格名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.MetaInfoKey.RefID">
+            <summary>
+            ID on related table. <br></br> 相關表格中的識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.MetaInfoKey.Key">
+            <summary>
+            Attribute name. <br></br> 屬性名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.MetaInfoKey.Value">
+            <summary>
+            Content of Attribute. <br></br> 屬性內容。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.Comparison">
+            <summary>
+            The comparison method of data.
+            <br></br> 數據比較方法。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.Equals">
+            <summary>
+            Search keyword should be equals to value in table. <br></br> 搜尋關鍵字需要與表格內的值相同。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.NotEquals">
+            <summary>
+            Search keyword should not be equals to value in table. <br></br> 搜尋關鍵字需要與表格內的值不同。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.Contains">
+            <summary>
+            Search keyword should be contained by value in table. <br></br> 搜尋關鍵字需要包含在表格內的值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.NotContains">
+            <summary>
+            Search keyword should not be contained by value in table. <br></br> 搜尋關鍵字需要不包含在表格內的值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.Smaller">
+            <summary>
+            Search keyword should be smaller value in table. <br></br> 搜尋關鍵字需要小於表格內的值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.NotSmaller">
+            <summary>
+            Search keyword should not be smaller to value in table. <br></br> 搜尋關鍵字需要不小於表格內的值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.Larger">
+            <summary>
+            Search keyword should be larger to value in table. <br></br> 搜尋關鍵字需要大於表格內的值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.Comparison.NotLarger">
+            <summary>
+            Search keyword should not be larger to value in table. <br></br> 搜尋關鍵字需要不大於表格內的值。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.SearchPattern">
+            <summary>
+            Search pattern of role table. 
+            <br></br> 角色表格的搜索模式。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SearchPattern.key">
+            <summary>
+            Attribute name of table. <br></br> 表格屬性名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SearchPattern.comparison">
+            <summary>
+            The comparison method of data. <br></br> 數據比較方法。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SearchPattern.keyword">
+            <summary>
+            Keyword. <br></br> 關鍵字。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.SearchPattern.caseSensitive">
+            <summary>
+            Check capital or not. <br></br> 是否檢查大小寫。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.SearchPattern.#ctor(System.Object,Votanic.vNet.Database.Comparison,System.Object,System.Boolean)">
+            <summary>
+            Add a search pattern.
+            <br></br> 新增一個搜索模式。
+            </summary>
+            <param name="key"> Attribute name of table <br></br> 表格屬性名稱 </param>
+            <param name="comparison"> The comparison method of data <br></br> 數據比較方法 </param>
+            <param name="keyword"> Keyword <br></br> 關鍵字 </param>
+            <param name="caseSensitive"> Check capital or not <br></br> 是否檢查大小寫 </param>
+        </member>
+        <member name="T:Votanic.vNet.Database.TableUpdate">
+            <summary>
+            Update details of table.
+            <br></br> 表格更新詳述。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TableUpdate.key">
+            <summary>
+            Attribute name in table. <br></br> 表格中的屬性名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TableUpdate.value">
+            <summary>
+            Update value. <br></br> 更新值。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.TableUpdate.#ctor(System.Object,System.Object)">
+            <summary>
+            Add an update.
+            <br></br> 新增一個更新。
+            </summary>
+            <param name="key"> Attribute name in table <br></br> 表格中的屬性名稱 </param>
+            <param name="value"> Update value <br></br> 更新值 </param>
+        </member>
+        <member name="T:Votanic.vNet.Database.DatabaseHandler">
+            <summary>
+            The class to handle Database.
+            <br></br> 處理數據庫的類別。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.DatabaseHandler.currentUser">
+            <summary>
+            Return the current login user.
+            <br></br> 傳回目前登入的使用者。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.DatabaseHandler.hasAuthority">
+            <summary>
+            Return the authority for fully access database.
+            <br></br> 傳回資料庫的完全存取權限。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.AccessAuthority(System.String)">
+            <summary>
+            Set the access authority for fully access database.
+            <br></br> 設定資料庫的完全存取權限。
+            <para> AccessAuthority("Authority") </para>
+            </summary>
+            <param name="identifier"> Unqiue identifier <br></br> 唯一識別碼 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.Login(System.String,System.String)">
+            <summary>
+            Login by User Name and Password.
+            <br></br> 以使用者名稱及密碼登入。
+            <para> Login("AC1234", "********") </para>
+            </summary>
+            <param name="userName"> User Name <br></br> 使用者名稱 </param>
+            <param name="password"> Password <br></br> 密碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.Login(System.String)">
+            <summary>
+            Login by Smart ID.
+            <br></br> 以智能識別碼登入。
+            <para> Login("123456789") </para>
+            </summary>
+            <param name="smartID"> Smart ID <br></br> 智能識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.Logout">
+            <summary>
+            Logout current user.
+            <br></br> 登出目前使用者。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateDB(System.String,System.String)">
+            <summary>
+            Create environment and application database if the paths do not exist.
+            <br></br> 當指定的路徑不存在時創造環境及應用程式數據庫。
+            <para> CreateDB("../Resources/Database/sysDB.db", "../Resources/Database/appDB.db") </para>
+            </summary>
+            <param name="sysDBPath"> Path of system database <br></br> 系統數據庫路徑 </param>
+            <param name="appDBPath"> Path of application database <br></br> 應用程式數據庫路徑 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.Clear">
+            <summary>
+            Clear the databases.
+            <br></br> 清空數據庫。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllRoles">
+            <summary>
+            Get all the roles from role table in system database.
+            <br></br> 在系統數據庫中的角色表格取得所有角色。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetRoles(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the roles by conditions from role table in system database.
+            <br></br> 在系統數據庫中的角色表格根據條件取得角色。
+            <para> GetRoles(new SearchPattern(RoleKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetRole(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first role by conditions from role table in system database.
+            <br></br> 在系統數據庫中的角色表格根據條件取得首個角色。
+            <para> GetRole(new SearchPattern(RoleKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateRole(System.String,System.String)">
+            <summary>
+            Create role or get the existing role from role table in system database.
+            <br></br> 在系統數據庫中的角色表格創造角色或取得已存在角色。
+            <para> CreateRole("RoleA", "ABC") </para>
+            </summary>
+            <param name="name"> Role name <br></br> 角色名稱 </param>
+            <param name="desc"> Description <br></br> 描述 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllRoles">
+            <summary>
+            Delete all roles from role table in system database.
+            <br></br> 在系統數據庫中的角色表格刪除所有角色。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteRoles(System.Collections.Generic.List{Votanic.vNet.Database.Role})">
+            <summary>
+            Delete the target roles from role table in system database.
+            <br></br> 在系統數據庫中的角色表格刪除指定角色。
+            <para> DeleteRoles(GetRoles()) </para>
+            </summary>
+            <param name="roles"> Role list <br></br> 角色列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteRole(Votanic.vNet.Database.Role)">
+            <summary>
+            Delete the target role from role table in system database.
+            <br></br> 在系統數據庫中的角色表格刪除指定單一角色。
+            <para> DeleteRole(GetRole()) </para>
+            </summary>
+            <param name="role"> Role <br></br> 角色 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateRole(Votanic.vNet.Database.Role,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of a role from role table in system database.
+            在系統數據庫中的角色表格更新單一角色的數據。
+            <para> UpdateRole(GetRole(), new TableUpdate(RoleKey.Name, "ABC")) </para>
+            </summary>
+            <param name="role"> Role <br></br> 角色 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateRoles(System.Collections.Generic.List{Votanic.vNet.Database.Role},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of roles from role table in system database.
+            在系統數據庫中的角色表格更新角色的數據。
+            <para> UpdateRoles(GetRoles(), new TableUpdate(RoleKey.Name, "ABC")) </para>
+            </summary>
+            <param name="roles"> Role list <br></br> 角色列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllUsers">
+            <summary>
+            Get all the users from user table in system database.
+            <br></br> 在系統數據庫中的使用者表格取得所有使用者。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetUsers(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the users by conditions from user table in system database.
+            <br></br> 在系統數據庫中的使用者表格根據條件取得使用者。
+            <para> GetUsers(new SearchPattern(UserKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetUser(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first user by conditions from user table in system database.
+            <br></br> 在系統數據庫中的使用者表格根據條件取得首個使用者。
+            <para> GetUser(new SearchPattern(UserKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateUser(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Create user or get the existing user from user table in system database.
+            <br></br> 在系統數據庫中的使用者表格創造使用者或取得已存在使用者。
+            <para> CreateUser("AC1234", "********", "123456789", "Chan Tai Man", "RoleA", "ABC") </para>
+            </summary>
+            <param name="userName"> User name for login <br></br> 登入用使用者名稱 </param>
+            <param name="password"> Password for login <br></br> 登入用密碼 </param>
+            <param name="smartID"> Smart ID for login <br></br> 登入用智能識別碼 </param>
+            <param name="fullName"> Full name of user <br></br> 使用者全名 </param>
+            <param name="role"> Role ID or Name <br></br> 角色識別碼或名稱 </param>
+            <param name="remark"> Remark of user <br></br> 使用者備註 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllUsers">
+            <summary>
+            Delete all users from user table in system database.
+            <br></br> 在系統數據庫中的使用者表格刪除所有使用者。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteUsers(System.Collections.Generic.List{Votanic.vNet.Database.User})">
+            <summary>
+            Delete the target users from user table in system database.
+            <br></br> 在系統數據庫中的使用者表格刪除指定使用者。
+            <para> DeleteUsers(GetUsers()) </para>
+            </summary>
+            <param name="users"> User list <br></br> 使用者列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteUser(Votanic.vNet.Database.User)">
+            <summary>
+            Delete the target user from user table in system database.
+            <br></br> 在系統數據庫中的使用者表格刪除指定單一使用者。
+            <para> DeleteUser(GetUser()) </para>
+            </summary>
+            <param name="user"> User <br></br> 使用者 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateUser(Votanic.vNet.Database.User,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of an user from user table in system database.
+            在系統數據庫中的使用者表格更新單一使用者的數據。
+            <para> UpdateUser(GetUser(), new TableUpdate(UserKey.FullName, "ABC")) </para>
+            </summary>
+            <param name="user"> User <br></br> 使用者 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateUsers(System.Collections.Generic.List{Votanic.vNet.Database.User},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of users from user table in system database.
+            在系統數據庫中的使用者表格更新使用者的數據。
+            <para> UpdateUsers(GetUsers(), new TableUpdate(UserKey.FullName, "ABC")) </para>
+            </summary>
+            <param name="users"> User list <br></br> 使用者列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllPlayers">
+            <summary>
+            Get all the players from player table in system database.
+            <br></br> 在系統數據庫中的玩家表格取得所有玩家。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetPlayers(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the players by conditions from player table in system database.
+            <br></br> 在系統數據庫中的玩家表格根據條件取得玩家。
+            <para> GetPlayers(new SearchPattern(PlayerKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetPlayer(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first player by conditions from player table in system database.
+            <br></br> 在系統數據庫中的玩家表格根據條件取得首個玩家。
+            <para> GetPlayer(new SearchPattern(PlayerKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreatePlayer(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Create player or get the existing player from player table in system database.
+            <br></br> 在系統數據庫中的玩家表格創造玩家或取得已存在玩家。
+            <para> CreatePlayer("AC1234", "********", "123456789", "Chan Tai Man", "ABC") </para>
+            </summary>
+            <param name="account"> Player account for joining the session <br></br> 加入場節的玩家帳戶 </param>
+            <param name="password"> Password for joining the session <br></br> 加入場節的密碼 </param>
+            <param name="smartID"> Smart identifier for joining the session <br></br> 加入場節的智能識別碼 </param>
+            <param name="fullName"> Full name of player <br></br> 玩家全名 </param>
+            <param name="remark"> Remark of player <br></br> 玩家備註 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllPlayers">
+            <summary>
+            Delete all players from player table in system database.
+            <br></br> 在系統數據庫中的玩家表格刪除所有玩家。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeletePlayers(System.Collections.Generic.List{Votanic.vNet.Database.Player})">
+            <summary>
+            Delete the target players from player table in system database.
+            <br></br> 在系統數據庫中的玩家表格刪除指定玩家。
+            <para> DeletePlayers(GetPlayers()) </para>
+            </summary>
+            <param name="players"> Player list <br></br> 玩家列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeletePlayer(Votanic.vNet.Database.Player)">
+            <summary>
+            Delete the target player from player table in system database.
+            <br></br> 在系統數據庫中的玩家表格刪除指定單一玩家。
+            <para> DeletePlayer(GetPlayer()) </para>
+            </summary>
+            <param name="player"> Player <br></br> 玩家 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdatePlayer(Votanic.vNet.Database.Player,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of an player from player table in system database.
+            在系統數據庫中的玩家表格更新單一玩家的數據。
+            <para> UpdatePlayer(GetPlayer(), new TableUpdate(PlayerKey.FullName, "ABC")) </para>
+            </summary>
+            <param name="player"> Player <br></br> 玩家 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdatePlayers(System.Collections.Generic.List{Votanic.vNet.Database.Player},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of players from player table in system database.
+            在系統數據庫中的玩家表格更新玩家的數據。
+            <para> UpdatePlayers(GetPlayers(), new TableUpdate(PlayerKey.FullName, "ABC")) </para>
+            </summary>
+            <param name="players"> Player list <br></br> 玩家列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllApps">
+            <summary>
+            Get all the apps from app table in system database.
+            <br></br> 在系統數據庫中的應用程式表格取得所有應用程式。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetApps(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the apps by conditions from app table in system database.
+            <br></br> 在系統數據庫中的應用程式表格根據條件取得應用程式。
+            <para> GetApps(new SearchPattern(AppKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetApp(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first app by conditions from app table in system database.
+            <br></br> 在系統數據庫中的應用程式表格根據條件取得首個應用程式。
+            <para> GetApp(new SearchPattern(AppKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateApp(System.String,System.String,System.String,System.String)">
+            <summary>
+            Create app or get the existing app from app table in system database.
+            <br></br> 在系統數據庫中的應用程式表格創造應用程式或取得已存在應用程式。
+            <para> CreateApp("QWERTYUIOP", "VotanicXR", "Votanic Project") </para>
+            </summary>
+            <param name="id"> Application identifier <br></br> 應用程式識別碼 </param>
+            <param name="name"> Application name <br></br> 應用程式名稱 </param>
+            <param name="desc"> Description <br></br> 描述 </param>>
+            <param name="imagePath"> Icon image path <br></br> 圖示路徑 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllApps">
+            <summary>
+            Delete all apps from app table in system database.
+            <br></br> 在系統數據庫中的應用程式表格刪除所有應用程式。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteApps(System.Collections.Generic.List{Votanic.vNet.Database.App})">
+            <summary>
+            Delete the target apps from app table in system database.
+            <br></br> 在系統數據庫中的應用程式表格刪除指定應用程式。
+            <para> DeleteApps(GetApps()) </para>
+            </summary>
+            <param name="apps"> App list <br></br> 應用程式列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteApp(Votanic.vNet.Database.App)">
+            <summary>
+            Delete the target app from app table in system database.
+            <br></br> 在系統數據庫中的應用程式表格刪除指定單一應用程式。
+            <para> DeleteApp(GetApp()) </para>
+            </summary>
+            <param name="app"> App <br></br> 應用程式 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateApp(Votanic.vNet.Database.App,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of an app from app table in system database.
+            在系統數據庫中的應用程式表格更新單一應用程式的數據。
+            <para> UpdateApp(GetApp(), new TableUpdate(AppKey.Name, "ABC")) </para>
+            </summary>
+            <param name="app"> App <br></br> 應用程式 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateApps(System.Collections.Generic.List{Votanic.vNet.Database.App},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of apps from app table in system database.
+            在系統數據庫中的應用程式表格更新應用程式的數據。
+            <para> UpdateApps(GetApps(), new TableUpdate(AppKey.Name, "ABC")) </para>
+            </summary>
+            <param name="apps"> App list <br></br> 應用程式列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllEnrollments">
+            <summary>
+            Get all the enrollments from enrollment table in system database.
+            <br></br> 在系統數據庫中的登記表格取得所有登記。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetEnrollments(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the enrollments by conditions from enrollment table in system database.
+            <br></br> 在系統數據庫中的登記表格根據條件取得登記。
+            <para> GetEnrollments(new SearchPattern(EnrollmentKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetEnrollment(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first enrollment by conditions from enrollment table in system database.
+            <br></br> 在系統數據庫中的登記表格根據條件取得首個登記。
+            <para> GetEnrollment(new SearchPattern(EnrollmentKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateEnrollment(System.Int32,System.Int32,System.String)">
+            <summary>
+            Create enrollment or get the existing enrollment from enrollment table in system database.
+            <br></br> 在系統數據庫中的登記表格創造登記或取得已存在登記。
+            <para> CreateEnrollment("Chan Tai Man", "Chan Siu Man", "Votanic Project") </para>
+            </summary>
+            <param name="userID"> User ID <br></br> 使用者識別碼 </param>
+            <param name="playerID"> Player ID <br></br> 玩家識別碼 </param>
+            <param name="appID"> Application ID <br></br> 應用程式識別碼 </param>>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllEnrollments">
+            <summary>
+            Delete all enrollments from enrollment table in system database.
+            <br></br> 在系統數據庫中的登記表格刪除所有登記。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteEnrollments(System.Collections.Generic.List{Votanic.vNet.Database.Enrollment})">
+            <summary>
+            Delete the target enrollments from enrollment table in system database.
+            <br></br> 在系統數據庫中的登記表格刪除指定登記。
+            <para> DeleteEnrollments(GetEnrollments()) </para>
+            </summary>
+            <param name="enrollments"> Enrollment list <br></br> 登記列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteEnrollment(Votanic.vNet.Database.Enrollment)">
+            <summary>
+            Delete the target enrollment from enrollment table in system database.
+            <br></br> 在系統數據庫中的登記表格刪除指定單一登記。
+            <para> DeleteEnrollment(GetEnrollment()) </para>
+            </summary>
+            <param name="enrollment"> Enrollment <br></br> 登記 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateEnrollment(Votanic.vNet.Database.Enrollment,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of an enrollment from enrollment table in system database.
+            在系統數據庫中的登記表格更新單一登記的數據。
+            <para> UpdateEnrollment(GetEnrollment(), new TableUpdate(EnrollmentKey.UserID, 1)) </para>
+            </summary>
+            <param name="enrollment"> Enrollment <br></br> 登記 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateEnrollments(System.Collections.Generic.List{Votanic.vNet.Database.Enrollment},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of enrollments from enrollment table in system database.
+            在系統數據庫中的登記表格更新登記的數據。
+            <para> UpdateEnrollments(GetEnrollments(), new TableUpdate(EnrollmentKey.UserID, 1)) </para>
+            </summary>
+            <param name="enrollments"> Enrollment list <br></br> 登記列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllTasks">
+            <summary>
+            Get all the tasks from task table in application database.
+            <br></br> 在應用程式數據庫中的任務表格取得所有任務。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetTasks(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the tasks by conditions from task table in application database.
+            <br></br> 在應用程式數據庫中的任務表格根據條件取得任務。
+            <para> GetTasks(new SearchPattern(TaskKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetTask(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first task by conditions from task table in application database.
+            <br></br> 在應用程式數據庫中的任務表格根據條件取得首個任務。
+            <para> GetTask(new SearchPattern(TaskKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateTask(System.String,System.Int32,System.Single,System.String)">
+            <summary>
+            Create task or get the existing task from task table in application database.
+            <br></br> 在應用程式數據庫中的任務表格創造任務或取得已存在任務。
+            <para> CreateTask("Say goodbye", 0, 100, "QWERTYUIOP") </para>
+            </summary>
+            <param name="name"> Task name <br></br> 任務名稱 </param>
+            <param name="index"> Task index <br></br> 任務編號 </param>
+            <param name="score"> Task score <br></br> 任務得分 </param>
+            <param name="app"> App ID or Name <br></br> 應用程式識別碼或名稱 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllTasks">
+            <summary>
+            Delete all tasks from task table in application database.
+            <br></br> 在應用程式數據庫中的任務表格刪除所有任務。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteTasks(System.Collections.Generic.List{Votanic.vNet.Database.Task})">
+            <summary>
+            Delete the target tasks from task table in application database.
+            <br></br> 在應用程式數據庫中的任務表格刪除指定任務。
+            <para> DeleteTasks(GetTasks()) </para>
+            </summary>
+            <param name="tasks"> Task list <br></br> 任務列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteTask(Votanic.vNet.Database.Task)">
+            <summary>
+            Delete the target task from task table in application database.
+            <br></br> 在應用程式數據庫中的任務表格刪除指定單一任務。
+            <para> DeleteTask(GetTask()) </para>
+            </summary>
+            <param name="task"> Task <br></br> 任務 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateTask(Votanic.vNet.Database.Task,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of a task from task table in application database.
+            在應用程式數據庫中的任務表格更新單一任務的數據。
+            <para> UpdateTask(GetTask(), new TableUpdate(TaskKey.Name, "ABC")) </para>
+            </summary>
+            <param name="task"> Task <br></br> 任務 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateTasks(System.Collections.Generic.List{Votanic.vNet.Database.Task},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of tasks from task table in application database.
+            在應用程式數據庫中的任務表格更新任務的數據。
+            <para> UpdateTasks(GetTasks(), new TableUpdate(TaskKey.Name, "ABC")) </para>
+            </summary>
+            <param name="tasks"> Task list <br></br> 任務列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllSessions">
+            <summary>
+            Get all the sessions from session table in application database.
+            <br></br> 在應用程式數據庫中的場節表格取得所有場節。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetSessions(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the sessions by conditions from session table in application database.
+            <br></br> 在應用程式數據庫中的場節表格根據條件取得場節。
+            <para> GetSessions(new SearchPattern(SessionKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetSession(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first session by conditions from session table in application database.
+            <br></br> 在應用程式數據庫中的場節表格根據條件取得首個場節。
+            <para> GetSession(new SearchPattern(SessionKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateSession(System.String,System.String)">
+            <summary>
+            Create session or get the existing session from session table in application database.
+            <br></br> 在應用程式數據庫中的場節表格創造場節或取得已存在場節。
+            <para> CreateSession("31/05/2020 07:01:33", "31/05/2020 07:02:44") </para>
+            </summary>
+            <param name="start"> Start time of session <br></br> 場節開始時間時間 </param>
+            <param name="end"> End time of session <br></br> 場節結束時間時間 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllSessions">
+            
+            <summary>
+            Delete all sessions from session table in application database.
+            <br></br> 在應用程式數據庫中的場節表格刪除所有場節。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteSessions(System.Collections.Generic.List{Votanic.vNet.Database.Session})">
+            <summary>
+            Delete the target sessions from session table in application database.
+            <br></br> 在應用程式數據庫中的場節表格刪除指定場節。
+            <para> DeleteSessions(GetSessions()) </para>
+            </summary>
+            <param name="sessions"> Session list <br></br> 場節列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteSession(Votanic.vNet.Database.Session)">
+            <summary>
+            Delete the target session from session table in application database.
+            <br></br> 在應用程式數據庫中的場節表格刪除指定單一場節。
+            <para> DeleteSession(GetSession()) </para>
+            </summary>
+            <param name="session"> Session <br></br> 場節 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateSession(Votanic.vNet.Database.Session,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of a session from session table in application database.
+            在應用程式數據庫中的場節表格更新單一場節的數據。
+            <para> UpdateSession(GetSession(), new TableUpdate(SessionKey.Start, "31/05/2020 07:02:44")) </para>
+            </summary>
+            <param name="session"> Session <br></br> 場節 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateSessions(System.Collections.Generic.List{Votanic.vNet.Database.Session},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of sessions from session table in application database.
+            在應用程式數據庫中的場節表格更新場節的數據。
+            <para> UpdateSessions(GetSessions(), new TableUpdate(SessionKey.Start, "31/05/2020 07:02:44")) </para>
+            </summary>
+            <param name="sessions"> Session list <br></br> 場節列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllPlayerSessions">
+            <summary>
+            Get all the player sessions from player session table in application database.
+            <br></br> 在應用程式數據庫中的玩家場節表格取得所有玩家場節。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetPlayerSessions(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the player sessions by conditions from player session table in application database.
+            <br></br> 在應用程式數據庫中的玩家場節表格根據條件取得玩家場節。
+            <para> GetPlayerSessions(new SearchPattern(PlayerSessionKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetPlayerSession(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first player session by conditions from player session table in application database.
+            <br></br> 在應用程式數據庫中的玩家場節表格根據條件取得首個玩家場節。
+            <para> GetPlayerSession(new SearchPattern(PlayerSessionKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreatePlayerSession(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Create player session or get the existing player session from player session table in application database.
+            <br></br> 在應用程式數據庫中的玩家場節表格創造玩家場節或取得已存在玩家場節。
+            <para> CreatePlayerSession(0, "AC1234", "PY5678") </para>
+            </summary>
+            <param name="sessionID"> Seesion ID <br></br> 場節識別碼 </param>
+            <param name="userID"> User ID <br></br> 使用者識別碼 </param>
+            <param name="playerID"> Player ID <br></br> 玩家識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllPlayerSessions">
+            
+            <summary>
+            Delete all player sessions from player session table in application database.
+            <br></br> 在應用程式數據庫中的玩家場節表格刪除所有玩家場節。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeletePlayerSessions(System.Collections.Generic.List{Votanic.vNet.Database.PlayerSession})">
+            <summary>
+            Delete the target player sessions from player session table in application database.
+            <br></br> 在應用程式數據庫中的玩家場節表格刪除指定玩家場節。
+            <para> DeletePlayerSessions(GetPlayerSessions()) </para>
+            </summary>
+            <param name="sessions"> Player session list <br></br> 玩家場節列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeletePlayerSession(Votanic.vNet.Database.PlayerSession)">
+            <summary>
+            Delete the target player session from player session table in application database.
+            <br></br> 在應用程式數據庫中的玩家場節表格刪除指定單一玩家場節。
+            <para> DeletePlayerSession(GetPlayerSession()) </para>
+            </summary>
+            <param name="session"> Player session <br></br> 玩家場節 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdatePlayerSession(Votanic.vNet.Database.PlayerSession,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of an player session from player session table in application database.
+            在應用程式數據庫中的玩家場節表格更新單一玩家場節的數據。
+            <para> UpdatePlayerSession(GetPlayerSession(), new TableUpdate(PlayerSessionKey.UserID, 1)) </para>
+            </summary>
+            <param name="session"> Player session <br></br> 玩家場節 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdatePlayerSessions(System.Collections.Generic.List{Votanic.vNet.Database.PlayerSession},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of player sessions from player session table in application database.
+            在應用程式數據庫中的玩家場節表格更新玩家場節的數據。
+            <para> UpdatePlayerSessions(GetPlayerSessions(), new TableUpdate(PlayerSessionKey.UserID, 1)) </para>
+            </summary>
+            <param name="sessions"> Player session list <br></br> 玩家場節列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllSessionDetails">
+            <summary>
+            Get all the session details from session details table in application database.
+            <br></br> 在應用程式數據庫中的場節詳述表格取得所有場節詳述。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetSessionDetails(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the session details by conditions from session details table in application database.
+            <br></br> 在應用程式數據庫中的場節詳述表格根據條件取得場節詳述。
+            <para> GetSessionDetails(new SearchPattern(SessionDetailKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetSessionDetail(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first session detail by conditions from session details table in application database.
+            <br></br> 在應用程式數據庫中的場節詳述表格根據條件取得首個場節詳述。
+            <para> GetSessionDetail(new SearchPattern(SessionDetailKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateSessionDetail(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Create session or get the existing session from session table in application database.
+            <br></br> 在應用程式數據庫中的場節詳述表格創造場節詳述或取得已存在場節詳述。
+            <para> CreateSessionDetail(0, 0, 0, "ABC", "31/05/2020 07:05:55") </para>
+            </summary>
+            <param name="playerSessionID"> Player session ID <br></br> 玩家場節識別碼 </param>
+            <param name="index"> Session Details Index <br></br> 場節詳述編號 </param>
+            <param name="taskID"> Task ID <br></br> 任務識別碼 </param>
+            <param name="taskResult"> Result of task <br></br> 任務結果 </param>
+            <param name="timestamp"> Date time when the task is recorded <br></br> 任務被記錄的日期時間 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllSessionDetails">
+            <summary>
+            Delete all session details from session details table in application database.
+            <br></br> 在應用程式數據庫中的場節詳述表格刪除所有場節詳述。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteSessionDetails(System.Collections.Generic.List{Votanic.vNet.Database.SessionDetail})">
+            <summary>
+            Delete the target session details from session details table in application database.
+            <br></br> 在應用程式數據庫中的場節詳述表格刪除指定場節詳述。
+            <para> DeleteSessionDetails(GetSessionDetails()) </para>
+            </summary>
+            <param name="sessionsDetails"> Session detail list <br></br> 場節詳述列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteSessionDetail(Votanic.vNet.Database.SessionDetail)">
+            <summary>
+            Delete the target session detail from session details table in application database.
+            <br></br> 在應用程式數據庫中的場節詳述表格刪除指定單一場節詳述。
+            <para> DeleteSessionDetail(GetSessionDetail()) </para>
+            </summary>
+            <param name="sessionDetail"> Session detail <br></br> 場節詳述 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateSessionDetail(Votanic.vNet.Database.SessionDetail,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of a session detail from session details table in application database.
+            在應用程式數據庫中的場節詳述表格更新單一場節詳述的數據。
+            <para> UpdateSessionDetail(GetSessionDetail(), new TableUpdate(SessionDetailKey.TaskID, 1)) </para>
+            </summary>
+            <param name="sessionDetail"> Session detail <br></br> 場節詳述 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateSessionDetails(System.Collections.Generic.List{Votanic.vNet.Database.SessionDetail},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of session details from session details table in application database.
+            在應用程式數據庫中的場節詳述表格更新場節詳述的數據。
+            <para> UpdateSessionDetails(GetSessionDetails(), new TableUpdate(SessionDetailKey.TaskID, 1)) </para>
+            </summary>
+            <param name="sessionsDetails"> Session detail list <br></br> 場節詳述列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetAllMetaInfos">
+            <summary>
+            Get all the meta infos from meta info table in application database.
+            <br></br> 在應用程式數據庫中的所有元信息。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetMetaInfos(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the meta infos by conditions from meta info table in application database.
+            <br></br> 在應用程式數據庫中的元信息表格根據條件取得元信息。
+            <para> GetMetaInfos(new SearchPattern(MetaInfoKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.GetMetaInfo(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get the first meta info by conditions from meta info table in application database.
+            <br></br> 在應用程式數據庫中的元信息表格根據條件取得首個元信息。
+            <para> GetMetaInfo(new SearchPattern(MetaInfoKey.ID, Comparison.Equals, "1", false)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.CreateMetaInfo(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Create metaInfo or get the existing meta info from meta info table in application database.
+            <br></br> 在應用程式數據庫中的元信息表格創造元信息或取得已存在元信息。
+            <para> CreateMetaInfo("Task", 1, "Event", "ABC") </para>
+            </summary>
+            <param name="table"> Related table name <br></br> 相關表格名稱 </param>
+            <param name="refID"> ID on the table <br></br> 在該表格中的識別碼 </param>
+            <param name="key"> Attribute name <br></br> 屬性名稱 </param>
+            <param name="value"> Content of attribute <br></br> 屬性內容 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteAllMetaInfos">
+            <summary>
+            Delete all meta infos from meta info table in application database.
+            <br></br> 在應用程式數據庫中的元信息表格刪除所有元信息。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteMetaInfos(System.Collections.Generic.List{Votanic.vNet.Database.MetaInfo})">
+            <summary>
+            Delete the target meta infos from meta info table in application database.
+            <br></br> 在應用程式數據庫中的元信息表格刪除指定元信息。
+            <para> DeleteMetaInfos(GetMetaInfos()) </para>
+            </summary>
+            <param name="metaInfos"> Meta info list <br></br> 元信息列表 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.DeleteMetaInfo(Votanic.vNet.Database.MetaInfo)">
+            <summary>
+            Delete the target meta info from meta info table in application database.
+            <br></br> 在應用程式數據庫中的元信息表格刪除指定單一元信息。
+            <para> DeleteMetaInfo(GetMetaInfo()) </para>
+            </summary>
+            <param name="metaInfo"> Meta info <br></br> 元信息 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateMetaInfo(Votanic.vNet.Database.MetaInfo,Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of a meta info from meta info table in application database.
+            在應用程式數據庫中的元信息表格更新單一元信息的數據。
+            <para> UpdateMetaInfo(GetMetaInfo(), new TableUpdate(MetaInfoKey.Value, "ABC")) </para>
+            </summary>
+            <param name="metaInfo"> Meta info <br></br> 元信息 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseHandler.UpdateMetaInfos(System.Collections.Generic.List{Votanic.vNet.Database.MetaInfo},Votanic.vNet.Database.TableUpdate[])">
+            <summary>
+            Update the data of meta infos from meta info table in application database.
+            在應用程式數據庫中的元信息表格更新元信息的數據。
+            <para> UpdateMetaInfos(GetMetaInfos(), new TableUpdate(MetaInfoKey.Value, "ABC")) </para>
+            </summary>
+            <param name="metaInfos"> Meta info list <br></br> 元信息列表 </param>
+            <param name="updates"> Update attributes <br></br> 更新的屬性 </param>
+        </member>
+        <member name="T:Votanic.vNet.Database.AppDetails">
+            <summary>
+            Details of this application. 
+            <br></br> 本應用程式詳述。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppDetails.identifier">
+            <summary>
+            Application unique ID. <br></br> 應用程式唯一識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppDetails.name">
+            <summary>
+            Application name. <br></br> 應用程式名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppDetails.description">
+            <summary>
+            Description of application. <br></br> 應用程式描述。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppDetails.imagePath">
+            <summary>
+            Icon image path of application. <br></br> 應用程式圖示影像路徑。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppDetails.currentUser">
+            <summary>
+            Current User ID. <br></br> 目前使用者識別碼。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.TaskSetting">
+            <summary>
+            MetaInfo Table of Applcation Database. 
+            <br></br> 應用程式數據庳的任務表格。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskSetting.name">
+            <summary>
+            Task name. <br></br> 任務名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskSetting.index">
+            <summary>
+            Task index. <br></br> 任務編號。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskSetting.score">
+            <summary>
+            Task score. <br></br> 任務得分。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.TaskSetting.description">
+            <summary>
+            Task Description. <br></br> 任務描述。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.DatabaseManager">
+            <summary>
+            The class to manage Database.
+            <br></br> 管理數據庫的類別。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.fileLocation">
+            <summary>
+            The relative folder location of files. <br></br> 檔案的相對文件夾位置。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.infoPath">
+            <summary>
+            Path of json file which store the database information. <br></br> 儲存數據庫資訊的 Json 文件路經。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.system">
+            <summary>
+            Path of system database. <br></br> 系統數據庳的路徑。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.application">
+            <summary>
+            Path of application database. <br></br> 應用程式數據庳的路徑。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.appDetails">
+            <summary>
+            Details of this application. <br></br> 應用程式詳述。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.tasks">
+            <summary>
+            List of task. <br></br> 任務列表。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.autoGenID">
+            <summary>
+            Auto generate identifier if identifier is empty. <br></br> 當識別碼為空時自動產生識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.isStarted">
+            <summary>
+            Return true if a session is started. <br></br> 當一個場節開始時傳回 true。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.account">
+            <summary>
+            Account input field. <br></br> 帳戶輸入欄。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.password">
+            <summary>
+            Password input field. <br></br> 密碼輸入欄。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.DatabaseManager.smartID">
+            <summary>
+            Smart ID input field. <br></br> 智能識別碼輸入欄。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.DatabaseManager.Database">
+            <summary>
+            The fully access authority handler for Database System.
+            <br></br> 數據庫系統的完全儲存權限處理器。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetPlayerList">
+            <summary>
+            Get the player list of current application from enrollment.
+            <br></br> 取得目前已登記應用程式的玩家列表。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetCurrentUser">
+            <summary>
+            Get the current login user.
+            <br></br> 取得目前登入的使用者。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.IsValidPlayer">
+            <summary>
+            Return a player true if the input field typed a valid player data.
+            <br></br> 當輸入欄的資料為有效玩家的數據時傳回一個玩家。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.IsValidPlayer(System.String)">
+            <summary>
+            Return a player true if the smart ID of player is valid.
+            <br></br> 當玩家的智能識碼為有效時傳回一個玩家。
+            <para> IsValidPlayer("12345678") </para>
+            </summary>
+            <param name="smartID"> Smart ID of player <br></br> 玩家的智能識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.IsValidPlayer(System.String,System.String)">
+            <summary>
+            Return a player if the account and passowrd of player is valid.
+            <br></br> 當玩家的帳戶及密碼為有效時傳回一個玩家。
+            <para> IsValidPlayer("AC1234", "********") </para>
+            </summary>
+            <param name="account"> Account of player <br></br> 玩家的帳戶 </param>
+            <param name="password"> Password of player <br></br> 玩家的密碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.StartSession(System.Collections.Generic.List{Votanic.vNet.Database.Player})">
+            <summary>
+            Start a new session.
+            <br></br> 開始新場節。
+            <para> StartSession(players) </para>
+            </summary>
+            <param name="players"> Participating players <br></br> 參與玩家 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetCurrentDataTime">
+            <summary>
+            Return the current data time with database format.
+            <br></br> 傳回以數據庫格式顯示的目前日期及時間。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetCurrentSession">
+            <summary>
+            Get the current started session.
+            <br></br> 取得目前開始的場節。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.AddRecord(Votanic.vNet.Database.Player,System.Int32,System.String)">
+            <summary>
+            Add a record for a player.
+            <br></br> 為一個玩家新增一個記錄。
+            <para> AddRecord(player[0], 1, "Done") </para>
+            </summary>
+            <param name="player"> Target player, player ID will be -1 if null <br></br> 目標玩家，當空時將玩家識別碼視為 -1 </param>
+            <param name="task"> Target task <br></br> 目標任務 </param>
+            <param name="result"> Task result <br></br> 任務結果 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetRecord(System.Int32,System.String)">
+            <summary>
+            Get a neweset record from record list of current started session. Null and -1 parameter will be ignored.
+            <br></br> 在目前開始場節的記錄列表中取得一個最新記錄。空及 -1 的參數將會無視。
+            <para> GetRecord() </para>
+            </summary>
+            <param name="task"> Task ID <br></br> 任務識別碼 </param>
+            <param name="result"> Task result <br></br> 任務結果 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetRecord(Votanic.vNet.Database.Player,System.Int32,System.String)">
+            <summary>
+            Remove a neweset record from record list of current started session. Null and -1 parameter will be ignored.
+            <br></br> 在目前開始場節的記錄列表中取得一個最新記錄。空及 -1 的參數將會無視。
+            <para> GetRecord(player) </para>
+            </summary>
+            <param name="player"> Target player, player ID will be -1 if null <br></br> 目標玩家，當空時將玩家識別碼視為 -1 </param>
+            <param name="task"> Task ID <br></br> 任務識別碼 </param>
+            <param name="result"> Task result <br></br> 任務結果 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.RemoveRecord(Votanic.vNet.Database.SessionDetail)">
+            <summary>
+            Remove a record from record list.
+            <br></br> 在記錄列表中移除一個記錄。
+            <para> RemoveRecord(sessionDetail) </para>
+            </summary>
+            <param name="sessionDetail"> Target record <br></br> 目標記錄 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.AddMetaInfo(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Add meta info for the current started session.
+            <br></br> 為目前已開始的場節新增元信息列表。
+            <para> AddMetaInfo("Session", 1, "Week", "7") </para>
+            </summary>
+            <param name="table"> Related table name <br></br> 相關表格名稱 </param>
+            <param name="refID"> ID on related table <br></br> 相關表格中的識別碼 </param>
+            <param name="key"> Attribute name <br></br> 屬性名稱 </param>
+            <param name="value"> Contenr of attrubte <br></br> 屬性內容 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetCurrentSessionMetaInfo(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Get a neweset meta info from meta info list of current started session. Null and -1 parameter will be ignored.
+            <br></br> 在目前開始場節的元信息列表中取得一個最新的元信息。空及 -1 的參數將會無視。
+            <para> GetCurrentSessionMetaInfo("Session", -1, "Week", "7") </para>
+            </summary>
+            <param name="table"> Related table name <br></br> 相關表格名稱 </param>
+            <param name="refID"> ID on related table <br></br> 相關表格中的識別碼 </param>
+            <param name="key"> Attribute name <br></br> 屬性名稱 </param>
+            <param name="value"> Contenr of attrubte <br></br> 屬性內容 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.RemoveMetaInfo(Votanic.vNet.Database.MetaInfo)">
+            <summary>
+            Remove the newest meta info of current started session.
+            <br></br> 目前已開始的場節移除最新的元信息。
+            <para> RemoveMetaInfo(metaInfo) </para>
+            </summary>
+            <param name="metaInfo"> Target meta info <br></br> 目標元信息 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetCurrentPlayerSession(System.Int32)">
+            <summary>
+            Get current started player session.
+            <br></br> 取得目前開始的玩家場節。
+            <para> GetCurrentPlayerSession(0) </para>
+            </summary>
+            <param name="playerID"> Player ID <br></br> 玩家識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetCurrentPlayerSessions">
+            <summary>
+            Get all the current started player sessions.
+            <br></br> 取得目前開始的所有玩家場節。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.EndSession(System.Boolean)">
+            <summary>
+            End the current session and save to database.
+            <br></br> 結束目前場節及儲存至數據庫。
+            <para> EndSession(true) </para>
+            </summary>
+            <param name="save"> Save all records if true <br></br> 當 true 時儲存所有記錄 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetPlayerSessions(System.Int32)">
+            <summary>
+            Get player session list of current user on database. -1 parameter will be ignored.
+            <br></br> 取得目前使用者在數據庫中的玩家場節列表。-1 的參數將會無視。
+            <para> GetPlayerSessions() </para>
+            </summary>
+            <param name="sessionID"> Session ID <br></br> 場節識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetPlayerSessions(Votanic.vNet.Database.Player,System.Int32)">
+            <summary>
+            Get player session list of a player on database. -1 parameter will be ignored.
+            <br></br> 取得一個玩家在數據庫中的玩家場節列表。-1 的參數將會無視。
+            <para> GetPlayerSessions(player) </para>
+            </summary>
+            <param name="player"> Target player, player ID will be -1 if null <br></br> 目標玩家，當空時將玩家識別碼視為 -1 </param>
+            <param name="sessionID"> Session ID <br></br> 場節識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetPlayerSessions(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get player sessions list of current user on database.
+            <br></br> 取得目前使用者在數據庫中的玩家場節列表。
+            <para> GetPlayerSessions(new SearchPattern(PlayerSessionKey.PlayerID, Comparison.Equals, 1)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetSessions(System.String,System.String)">
+            <summary>
+            Get all sessions of current user on database. Null parameter will be ignored.
+            <br></br> 取得目前使用者在數據庫中的所有場節。空的參數將會無視。
+            <para> GetSessions() </para>
+            </summary>
+            <param name="start"> Start date time <br></br> 開始日期及時間 </param>
+            <param name="end"> End date time <br></br> 結束日期及時間 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetSessions(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get session list of current user on database.
+            <br></br> 取得目前使用者在數據庫中的場節列表。
+            <para> GetSessions(new SearchPattern(SessionKey.ID, Comparison.Equals, 1)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetSessionDetails(System.Int32,System.String,System.String)">
+            <summary>
+            Get session detail list of current user on database. Null and -1 parameter will be ignored.
+            <br></br> 取得目前使用者在數據庫中的場節詳述列表。空及 -1 的參數將會無視。
+            <para> GetSessionDetails() </para>
+            </summary>
+            <param name="taskID"> Task ID <br></br> 任務識別碼 </param>
+            <param name="taskResult"> Task result <br></br> 任務結果 </param>
+            <param name="timestamp"> The date time when the task is recorded <br></br> 任務被記錄的日期時間 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetSessionDetails(Votanic.vNet.Database.Player,System.Int32,System.String,System.String)">
+            <summary>
+            Get session detail list of a player on database. Null and -1 parameter will be ignored.
+            <br></br> 取得一個玩家在數據庫中的場節詳述列表。空及 -1 的參數將會無視。
+            <para> GetSessionDetails(player) </para>
+            </summary>
+            <param name="player"> Target player, player ID will be -1 if null <br></br> 目標玩家，當空時將玩家識別碼視為 -1 </param>
+            <param name="taskID"> Task ID <br></br> 任務識別碼 </param>
+            <param name="taskResult"> Task result <br></br> 任務結果 </param>
+            <param name="timestamp"> The date time when the task is recorded <br></br> 任務被記錄的日期時間 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetSessionDetails(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get session detail list of current user on database.
+            <br></br> 取得目前使用者在數據庫中的場節詳述列表。
+            <para> GetSessionDetails(new SearchPattern(SessionDetailKey.ID, Comparison.Equals, 1)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetMetaInfos(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Get meta info list of this application on database. Null and -1 parameter will be ignored.
+            <br></br> 取得應用程式在數據庫中的的元信息列表。空及 -1 的參數將會無視。
+            <para> GetMetaInfos("Session", -1, "Week", "7") </para>
+            </summary>
+            <param name="table"> Related table name <br></br> 相關表格名稱 </param>
+            <param name="refID"> ID on related table <br></br> 相關表格中的識別碼 </param>
+            <param name="key"> Attribute name <br></br> 屬性名稱 </param>
+            <param name="value"> Contenr of attrubte <br></br> 屬性內容 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.GetMetaInfos(Votanic.vNet.Database.SearchPattern[])">
+            <summary>
+            Get meta info list of this application on database.
+            <br></br> 取得應用程式在數據庫中的的元信息列表。
+            <para> GetMetaInfos(new SearchPattern(MetaInfoKey.ID, Comparison.Equals, 1)) </para>
+            </summary>
+            <param name="searchPatterns"> Search Pattern <br></br> 搜索模式 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.DeleteSessions(Votanic.vNet.Database.Session[])">
+            <summary>
+            Delete sessions on database.
+            <br></br> 刪除在數據庫中的場節。
+            <para> DeleteSessions(sessions) </para>
+            </summary>
+            <param name="sessions"> Target sessions <br></br> 目標場節 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.DeletePlayerSessions(Votanic.vNet.Database.PlayerSession[])">
+            <summary>
+            Delete player sessions on database.
+            <br></br> 刪除在數據庫中的玩家場節。
+            <para> DeletePlayerSessions(playerSessions) </para>
+            </summary>
+            <param name="playerSessions"> Target player sessions <br></br> 目標玩家場節 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.DeleteSessionDetails(Votanic.vNet.Database.SessionDetail[])">
+            <summary>
+            Delete session details on database.
+            <br></br> 刪除在數據庫中的場節詳述。
+            <para> DeleteSessionDetails(sessionDetails) </para>
+            </summary>
+            <param name="sessionDetails"> Target session details <br></br> 目標場節詳述 </param>
+        </member>
+        <member name="M:Votanic.vNet.Database.DatabaseManager.DeleteMetaInfos(Votanic.vNet.Database.MetaInfo[])">
+            <summary>
+            Delete metai infos on database.
+            <br></br> 刪除在數據庫中的元信息。
+            <para> DeleteMetaInfos(sessionDetails) </para>
+            </summary>
+            <param name="metaInfos"> Target metai infos <br></br> 目標元信息 </param>
+        </member>
+        <member name="T:Votanic.vNet.Database.Role">
+            <summary>
+            Role Table of Database. 
+            <br></br> 數據庳的角色表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Role.RoleID">
+            <summary>
+            Role unique ID. <br></br> 角色唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Role.Name">
+            <summary>
+            Role name. <br></br> 角色名稱。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Role.Description">
+            <summary>
+            Role Description. <br></br> 角色描述。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.RoleKey">
+            <summary>
+            Attribute type for searching roles.
+            <br></br> 搜尋角色的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.RoleKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.RoleKey.ID">
+            <summary>
+            Role ID. <br></br> 角色識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.RoleKey.Name">
+            <summary>
+            Role name. <br></br> 角色名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.RoleKey.Description">
+            <summary>
+            Role Description. <br></br> 角色描述。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.User">
+            <summary>
+            User Table of System Database. 
+            <br></br> 系統數據庳的使用者表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.User.UserID">
+            <summary>
+            User unique ID. <br></br> 使用者唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.User.UserName">
+            <summary>
+            User name for login. <br></br> 登入的使用者名稱。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.User.Password">
+            <summary>
+            Password for login. <br></br> 登入的密碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.User.SmartID">
+            <summary>
+            Smart identifier for login. <br></br> 登入的智能識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.User.FullName">
+            <summary>
+            Full name of user. <br></br> 使用者全名。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.User.RoleID">
+            <summary>
+            Role ID of user role. <br></br> 使用者角色識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.User.Remark">
+            <summary>
+            Remark of user. <br></br> 使用者備註。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.UserKey">
+            <summary>
+            Attribute type for searching users.
+            <br></br> 搜尋使用者的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.ID">
+            <summary>
+            User ID. <br></br> 使用者識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.UserName">
+            <summary>
+            User name for login. <br></br> 登入用使用者名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.Password">
+            <summary>
+            Password for login. <br></br> 登入用密碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.SmartID">
+            <summary>
+            Smart ID for login. <br></br> 登入用智能識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.FullName">
+            <summary>
+            Full name of user. <br></br> 使用者全名。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.RoleID">
+            <summary>
+            Role ID. <br></br> 角色識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.UserKey.Remark">
+            <summary>
+            Remark of user. <br></br> 使用者備註。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.Player">
+            <summary>
+            Player Table of System Database. 
+            <br></br> 系統數據庳的玩家表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Player.PlayerID">
+            <summary>
+            Player unique ID. <br></br> 玩家唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Player.Account">
+            <summary>
+            Player account for joining the session. <br></br> 加入場節的玩家帳戶。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Player.Password">
+            <summary>
+            Password for joining the session. <br></br> 加入場節的密碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Player.SmartID">
+            <summary>
+            Smart identifier for joining the session. <br></br> 加入場節的智能識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Player.FullName">
+            <summary>
+            Full name of player. <br></br> 玩家全名。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Player.Remark">
+            <summary>
+            Remark of player. <br></br> 玩家備註。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.PlayerKey">
+            <summary>
+            Attribute type for searching players.
+            <br></br> 搜尋玩家的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerKey.ID">
+            <summary>
+            Player ID. <br></br> 玩家識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerKey.Account">
+            <summary>
+            Player account for joining the session. <br></br> 加入場節的玩家帳戶。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerKey.Password">
+            <summary>
+            Password for joining the session. <br></br> 加入場節的密碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerKey.SmartID">
+            <summary>
+            Smart identifier for joining the session. <br></br> 加入場節的智能識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerKey.FullName">
+            <summary>
+            Full name of player. <br></br> 玩家全名。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.PlayerKey.Remark">
+            <summary>
+            Remark of player. <br></br> 玩家備註。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.App">
+            <summary>
+            App Table of System Database. 
+            <br></br> 系統數據庳的應用程式表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.App.AppID">
+            <summary>
+            Application unique ID. <br></br> 應用程式唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.App.Name">
+            <summary>
+            Application name. <br></br> 應用程式名稱。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.App.Description">
+            <summary>
+            Description of application. <br></br> 應用程式描述。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.App.ImagePath">
+            <summary>
+            Icon image path of application. <br></br> 應用程式圖示影像路徑。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.AppKey">
+            <summary>
+            Attribute type for searching apps.
+            <br></br> 搜尋應用程式的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppKey.Any">
+            <summary>
+            Any attribute <br></br> 任何屬性
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppKey.ID">
+            <summary>
+            App ID <br></br> 應用程式識別碼
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppKey.Name">
+            <summary>
+            App name <br></br> 應用程式名稱
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppKey.Description">
+            <summary>
+            App Description <br></br> 應用程式描述
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.AppKey.ImagePath">
+            <summary>
+            Icon image path <br></br> 圖示路徑 
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.Enrollment">
+            <summary>
+            Enrollment Table of System Database. 
+            <br></br> 系統數據庳的登記表格。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Enrollment.EnrollmentID">
+            <summary>
+            Enrollment unique ID. <br></br> 登記唯一識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Enrollment.UserID">
+            <summary>
+            User ID. <br></br> 使用者識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Enrollment.PlayerID">
+            <summary>
+            Player ID. <br></br> 玩家識別碼。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Database.Enrollment.AppID">
+            <summary>
+            Application ID. <br></br> 應用程式識別碼。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Database.EnrollmentKey">
+            <summary>
+            Attribute type for searching players.
+            <br></br> 搜尋玩家的屬性類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.EnrollmentKey.Any">
+            <summary>
+            Any attribute. <br></br> 任何屬性。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.EnrollmentKey.ID">
+            <summary>
+            Enrollment ID. <br></br> 登記識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.EnrollmentKey.UserID">
+            <summary>
+            User ID. <br></br> 使用者識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.EnrollmentKey.PlayerID">
+            <summary>
+            Player ID. <br></br> 玩家識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Database.EnrollmentKey.AppID">
+            <summary>
+            Application ID. <br></br> 應用程式識別碼。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Database.SQLite.SQLiteCommand.OnInstanceCreated(System.Object)">
+            
+        </member>
+        <member name="T:Votanic.vNet.ConnectionState">
+            <summary>
+            Connection state of networking.
+            <br></br> 網絡連線狀態。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.ConnectionState.Idle">
+            <summary>
+            No connection. <br></br> 沒有連線。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.ConnectionState.Connecting">
+            <summary>
+            Connecting to server. <br></br> 正連至伺服器。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.ConnectionState.Connected">
+            <summary>
+            Connected to server. <br></br> 已連至伺服器。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.ConnectionState.Disconnected">
+            <summary>
+            Disconnected connection. <br></br> 中斷連線。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.ConnectionState.Error">
+            <summary>
+            Failed to connect. <br></br> 連線失敗。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.NetworkAddress">
+            <summary>
+            Network address static functions.
+            <br></br> 網絡位址靜態功能。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.NetworkAddress.local">
+            <summary>
+            Return the local IP address.
+            <br></br> 傳回本地 IP 位址。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.NetworkAddress.external">
+            <summary>
+            Return the external IP address.
+            <br></br> 傳回外部 IP 位址。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.vNet.Messenger.Protocol">
+            <summary>
+            Communication protocol. 
+            <br></br> 通訊協定。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.Protocol.TCP">
+            <summary>
+            Transmission Control Protocol. <br></br> 傳輸控制協定。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.Protocol.UDP">
+            <summary>
+            User Datagram Protocol. <br></br> 用戶資料報協定。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Messenger.UserType">
+            <summary>
+            User type on connection.
+            <br></br> 連線使用者類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.UserType.Client">
+            <summary>
+            Client side. <br></br> 客戶端。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.UserType.Host">
+            <summary>
+            Both client and server. <br></br> 同時為客戶端及伺服器端。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.UserType.Server">
+            <summary>
+            Server side. <br></br> 伺服器端。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Messenger.NetworkMessenger">
+            <summary>
+            The network messenger for communication using TCP/UDP.
+            <br></br> 透過 TCP/UDP 溝通的網絡通訊器。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.extendedASCIIEncoding">
+            <summary>
+            Encode method. <br></br> 解碼方法。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.protocol">
+            <summary>
+            Communication protocol. <br></br> 通訊協定。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.type">
+            <summary>
+            User type on connection. <br></br> 連線使用者類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.networkName">
+            <summary>
+            Uesr name in connection. <br></br> 連線用的使用者名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.messageWithName">
+            <summary>
+            Send message with user name if true. <br></br> 當 true 時傳送的訊息會顯示使用者名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.autoConnect">
+            <summary>
+            Auto start networking on start. <br></br> 開始時自動連線。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.reconnect">
+            <summary>
+            Auto reconnect one time if failed to connect or lost connection. <br></br> 當連線失敗或失去連線時自動重新連線一次。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.checkConnection">
+            <summary>
+            Keeping send and receive data to check connection if true. <br></br> 當 true 時不斷傳送及接收訊息以確認連線。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.buffer">
+            <summary>
+            Time gap for checking connection state in seconds. <br></br> 每次檢查連線狀態的時間緩衝（秒數）。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.timeout">
+            <summary>
+            Times for fail or lost connection. <br></br> 容許失敗及失去連線的次數。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.errorMsg">
+            <summary>
+            Error message list. <br></br> 錯誤訊息列表。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.maxConnections">
+            <summary>
+            Max user count in the connetion. <br></br> 連線的最大使用者數目。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.ip">
+            <summary>
+            Server IP address. <br></br> 伺服器 IP 位址。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.port">
+            <summary>
+            Server port. <br></br> 伺服器連接埠。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.hostMsg">
+            <summary>
+            Message when start networking. <br></br> 開始連線的訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.stopMsg">
+            <summary>
+            Message when stop networking. <br></br> 關閉連線的訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.joinMsg">
+            <summary>
+            Message when connect to server. <br></br> 連至伺服器的訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.quitMsg">
+            <summary>
+            Message when disconnect to server. <br></br> 離開伺服器的訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.ownPort">
+            <summary>
+            Client port of UDP. <br></br> UDP 需要的客戶連接埠。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.numberOfConnection">
+            <summary>
+            Current user count. <br></br> 目前的使用者數目。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.isHosting">
+            <summary>
+            Return true if the user type is not client. <br></br> 當使用者類型不是客戶端時傳回 true。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.state">
+            <summary>
+            Connection state of networking. <br></br> 網絡連線狀態。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.data">
+            <summary>
+            All received data. <br></br> 所有已接收的數據。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Messenger.NetworkMessenger.log">
+            <summary>
+            Reported data. <br></br> 已回報的數據。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.NetworkMessenger.StartServer">
+            <summary>
+            Start networking as a server.
+            <br></br> 作為伺服器開始連線。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.NetworkMessenger.StopServer">
+            <summary>
+            Stop server.
+            <br></br> 關閉連線。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.NetworkMessenger.Host">
+            <summary>
+            Start networking as a host.
+            <br></br> 作為伺服器及客戶開始連線。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.NetworkMessenger.Connect(System.String,System.Int32)">
+            <summary>
+            Connect to server.
+            <br></br> 連至伺服器。
+            <para> Connect("192.168.0.100", 7777) </para>
+            </summary>
+            <param name="ip"> Server IP address <br></br> 伺服器 IP 位址 </param>
+            <param name="port"> Server port <br></br> 伺服器連接埠 </param>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.NetworkMessenger.Disconnect">
+            <summary>
+            Disconnect to server.
+            <br></br> 離開伺服器。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.NetworkMessenger.Send(System.String,System.Int32[])">
+            <summary>
+            Send message.
+            <br></br> 傳送訊息。
+            <para> Send("Hello World!") </para>
+            </summary>
+            <param name="message"> Message <br></br> 訊息 </param>
+            <param name="receiver"> Specific users ID <br></br> 特殊指明的使用者編號 </param>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.NetworkMessenger.ChangeName(System.String,System.Boolean)">
+            <summary>
+            Change the own network user name.
+            <br></br> 更改自身網絡使用者名稱。
+            <para> ChangeName("UserB") </para>
+            </summary>
+            <param name="name"> New name <br></br> 新名稱 </param>
+            <param name="message"> Show message if true <br></br> 當 true 時顯示訊息 </param>
+        </member>
+        <member name="M:Votanic.vNet.Messenger.TCPClient.ConnectToTcpServer">
+            <summary> 	
+            Setup socket connection. 	
+            </summary> 	
+        </member>
+        <member name="M:Votanic.vNet.Messenger.TCPClient.ListenForData">
+            <summary> 	
+            Runs in background clientReceiveThread; Listens for incoming data. 	
+            </summary>     
+        </member>
+        <member name="M:Votanic.vNet.Messenger.TCPClient.SendMessage(System.String)">
+            <summary> 	
+            Send message to server using socket connection. 	
+            </summary> 	
+        </member>
+        <member name="F:Votanic.vNet.Messenger.TCPServer.tcpListener">
+            <summary> 	
+            TCPListener to listen for incoming TCP connection 	
+            requests. 	
+            </summary> 	
+        </member>
+        <member name="F:Votanic.vNet.Messenger.TCPServer.tcpListenerThread">
+            <summary> 
+            Background thread for TcpServer workload. 	
+            </summary> 	
+        </member>
+        <member name="M:Votanic.vNet.Messenger.TCPServer.ListenForIncomingRequests">
+            <summary> 	
+            Runs in background TcpServerThread; Handles incoming TcpClient requests 	
+            </summary> 	
+        </member>
+        <member name="M:Votanic.vNet.Messenger.TCPServer.SendMessage(System.Net.Sockets.TcpClient,System.String)">
+            <summary> 	
+            Send message to client using socket connection. 	
+            </summary> 	
+        </member>
+        <member name="T:Votanic.vNet.Networking.SyncField">
+            <summary>
+            Make the variable as sync field on Networking, the value will be sent by user who has authority.
+            <br></br> 使變數在網絡可進行同步，擁有權限的使用者將會傳送其值。
+            <para> [SyncField] </para>
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.UserType">
+            <summary>
+            User type on connection.
+            <br></br> 連線使用者類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.UserType.Host">
+            <summary>
+            Both client and server. <br></br> 同時為客戶端及伺服器端。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.UserType.Client">
+            <summary>
+            Client side. <br></br> 客戶端。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.NetworkManager">
+            <summary>
+            The network manager for multiplayer.
+            <br></br> 多人連線的網絡管理員。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Networking.NetworkManager.uNetManager">
+            <summary>
+            The Unity Network Manager component. <br></br> Unity 網絡管理員組件。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.NetworkManager.OnReceived">
+            <summary>
+            The delegate for received message. <br></br> 已接收訊息的委託。
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.ReceivedMessage">
+            <summary>
+            The delegate function. <br></br> 委託的功能。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.type">
+            <summary>
+            User type of current connection. <br></br> 目前連線的使用者類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.address">
+            <summary>
+            Address of connection. <br></br> 連線位址。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.port">
+            <summary>
+            Port of connection. <br></br> 連接埠。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.networkName">
+            <summary>
+            Network user name. <br></br> 網絡使用者名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.maxConnections">
+            <summary>
+            Maximum number of users. <br></br> 最大使用者數目。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.autoConnect">
+            <summary>
+            Auto start connection on start if true. <br></br> 當 true 時在開始時自動開始連線。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.reconnect">
+            <summary>
+            Auto reconnect times when connection is failed. <br></br> 當連線失敗時的自動重連次數。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.connectingBuffer">
+            <summary>
+            Buffer for connection. <br></br> 連線緩衝。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.defaultSendName">
+            <summary>
+            By default include user name in sent message. <br></br> 預設傳送訊息包含使用者名稱。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.defaultSendID">
+            <summary>
+            By default include user ID in sent message. <br></br> 預設傳送訊息包含使用者編號。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.messageLog">
+            <summary>
+            Display received messages on debug log. <br></br> 在偵錯日誌顯示已接收的訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.hostMsg">
+            <summary>
+            Start hosting message. <br></br> 開始主持訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.stopMsg">
+            <summary>
+            Stop hosting message. <br></br> 結束主持訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.joinMsg">
+            <summary>
+            Joined connection message. <br></br> 加入連線的訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.quitMsg">
+            <summary>
+            Quit connection message. <br></br> 離開連線的訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.userPrefab">
+            <summary>
+            User prefab for networking. <br></br> 網絡使用者預製件。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.spawnPrefabs">
+            <summary>
+            Networking spawnable prefabes. <br></br> 網絡可生成的預製件。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.state">
+            <summary>
+            Connection state of networking. <br></br> 網絡連線狀態。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.numOfUsers">
+            <summary>
+            Number of users. <br></br> 使用者數目。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.networkID">
+            <summary>
+            Network ID of current connection. <br></br> 目前連線使用的識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.errorLog">
+            <summary>
+            Error log of connection. <br></br> 連線錯誤訊息。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkManager.messages">
+            <summary>
+            All received messages. <br></br> 所有已接收訊息。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.OnDestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Initialize">
+            <summary>
+            Initialization of network manager.
+            <br></br> 網絡管理員初始化功能。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.AddNetworkMessage(System.Int16,UnityEngine.Networking.NetworkMessageDelegate)">
+            <summary>
+            Add custom network message handler.
+            <br></br> 新增自定義網絡訊息處理器。
+            <para> AddNetworkMessage(300, OnReceivedCustom) </para>
+            </summary>
+            <param name="channel"> Message channel, please choose from 1000 <br></br> 訊息頻道，請由 1000 開始選擇 </param>
+            <param name="handler"> The handler of message. <br></br> 訊息處理器 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.StartNetworkConnection">
+            <summary>
+            Start network connection by your current user type.
+            <br></br> 根據你的使用者類型開始網絡連線。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.StopNetworkConnection">
+            <summary>
+            Stop network connection by your current user type.
+            <br></br> 根據你的使用者類型終止網絡連線。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Host">
+            <summary>
+            Start hosting.
+            <br></br> 開始主持。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Host(System.Int32)">
+            <summary>
+            Start hosting.
+            <br></br> 開始主持。
+            <para> Host(7777) </para>
+            </summary>
+            <param name="port"> Port <br></br> 連接埠 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Stop">
+            <summary>
+            Stop hosting.
+            <br></br> 結束主持。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Connect">
+            <summary>
+            Connect to server.
+            <br></br> 連線至伺服器。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Connect(System.String,System.Int32)">
+            <summary>
+            Connect to server.
+            <br></br> 連線至伺服器。
+            <para> Connect("localhost", 7777) </para>
+            </summary>
+            <param name="address"> IP address <br></br> IP 位址 </param>
+            <param name="port"> Port <br></br> 連接埠 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Disconnect">
+            <summary>
+            Disconnect to server.
+            <br></br> 中斷連線。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.GetNetworkIdentity(System.UInt32)">
+            <summary>
+            Get the Network Identity compnoent.
+            <br></br> 取得網絡識別器組件。
+            <para> GetNetworkIdentity(0) </para>
+            </summary>
+            <param name="netID"> Network ID of object <br></br> 物件網絡識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.GetAllNetworkIdentities">
+            <summary>
+            Get all Network Identity compnoents.
+            <br></br> 取得所有網絡識別器組件。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.GetNetworkObject(System.UInt32)">
+            <summary>
+            Get the Network Object compnoent.
+            <br></br> 取得網絡物件。
+            <para> GetNetworkObject(0) </para>
+            </summary>
+            <param name="netID"> Network ID of object <br></br> 物件網絡識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.GetAllNetworkObjects">
+            <summary>
+            Get all Network Object compnoents.
+            <br></br> 取得所有網絡物件。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.GetNetworkUser(System.UInt32)">
+            <summary>
+            Get the Network User in connection.
+            <br></br> 取得連線中的網絡使用者。
+            <para> GetNetworkUser(0) </para>
+            </summary>
+            <param name="userID"> Connection ID of user <br></br> 使用者的連線識別碼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.GetAllNetworkUsers">
+            <summary>
+            Get all Network Users in connection.
+            <br></br> 取得連線中的所有網絡使用者。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.SpawnObject(UnityEngine.GameObject)">
+            <summary>
+            Spawn a network object.
+            <br></br> 產生一個網絡物件。
+            </summary>
+            <param name="networkObject"> Target prefab <br></br> 目標預載體 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.SpawnObject(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Spawn a network object.
+            <br></br> 產生一個網絡物件。
+            </summary>
+            <param name="networkObject"> Target prefab <br></br> 目標預載體 </param>
+            <param name="position"> Target position <br></br> 目標位置 </param>
+            <param name="eulerAngles"> Target euler angles <br></br> 目標角度 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.DestroyObject(Votanic.vNet.Networking.NetworkObject)">
+            <summary>
+            Destroy a network object.
+            <br></br> 刪除一個網絡物件。
+            </summary>
+            <param name="networkObject"> Target object <br></br> 目標物件 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.SyncUsers">
+            <summary>
+            Sync users information.
+            <br></br> 同步使用者資訊。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.Send(System.String,System.Boolean,System.Boolean,System.Int32[])">
+            <summary>
+            Send message.
+            <br></br> 傳送訊息。
+            <para> Send("Hello World!") </para>
+            </summary>
+            <param name="message"> Content <br></br> 內容 </param>
+            <param name="withName"> Display [Name] <br></br> 顯示 [名稱] </param>
+            <param name="withID"> Display (ID) <br></br> 顯示 (識別碼) </param>
+            <param name="usersID"> Specific users ID <br></br> 指定的使用者識別碼 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.ChangeName(System.String,System.Boolean)">
+            <summary>
+            Change the own network user name.
+            <br></br> 更改自身網絡使用者名稱。
+            <para> ChangeName("UserB") </para>
+            </summary>
+            <param name="name"> New name <br></br> 新名稱 </param>
+            <param name="message"> Show message if true <br></br> 當 true 時顯示訊息 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.SetAuthority(UnityEngine.Networking.NetworkIdentity,System.Boolean)">
+            <summary>
+            Set the authority of a network object as own user.
+            設定一個網絡物件的控制者為自身使用者。
+            <para> SetAuthority(gameObject.GetComponent("NetworkIdentity")) </para>
+            </summary>
+            <param name="identity"> Network identity component <br></br> 網絡識別器 </param>
+            <param name="forceSyncTransform"> Force instantly sync network object transform <br></br> 強制馬上同步網絡物件的 Transform </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.ReturnAuthority(UnityEngine.Networking.NetworkIdentity)">
+            <summary>
+            Return the authority of a network object to host.
+            交還一個網絡物件的控制權給主持。
+            <para> ReturnAuthority(gameObject.GetComponent("NetworkIdentity")) </para>
+            </summary>
+            <param name="identity"> Network identity component <br></br> 網絡識別器 </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.ChangeScene(System.String,System.Boolean)">
+            <summary>
+            Change all users' scene by name.
+            <para> ChangeScene("Scene1") </para>
+            </summary>
+            <param name="name"> Scene name <br></br> 場景名稱 </param>
+            <param name="async"> Enable async <br></br> 使用 Async </param>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkManager.ChangeScene(System.Int32,System.Boolean)">
+            <summary>
+            Change all users' scene by name.
+            <para> ChangeScene(0) </para>
+            </summary>
+            <param name="index"> Scene index <br></br> 場景編號 </param>
+            <param name="async"> Enable async <br></br> 使用 Async </param>
+        </member>
+        <member name="T:Votanic.vNet.Networking.MessageType">
+            <summary>
+            Data type for network communication.
+            <br></br> 網絡溝通的數據類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.MessageType.command">
+            <summary>
+            Internal use command. <br></br> 內部使用的指令。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.MessageType.chat">
+            <summary>
+            Messages for communication. <br></br> 溝通訊息。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.SyncTransform">
+            <summary>
+            The synchronizes part of tranform.
+            <br></br> 同步的變換部份。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.SyncTransform.local">
+            <summary>
+            Send local position is true. <br></br> 當 true 時傳送自身位置。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.SyncTransform.position">
+            <summary>
+            Sync position. <br></br> 同步位置。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.SyncTransform.rotation">
+            <summary>
+            Sync rotation. <br></br> 同步角度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.SyncTransform.scale">
+            <summary>
+            Sync scale. <br></br> 同步大小。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.SyncPart">
+            <summary>
+            Transform data sync setting.
+            Transfrom 數據同步設定。
+            <br></br>
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.SyncPart.sync">
+            <summary>
+            Sync the part of transform. <br></br> 同步這個 Transform 部份。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.SyncPart.compression">
+            <summary>
+            Enable compression if true. <br></br> 當 true 時啟用壓縮。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.SyncPart.decimalPlaces">
+            <summary>
+            Number of decimal places. <br></br> 小數位數目。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.AutoAddTransform">
+            <summary>
+            Auto add target transform setting.
+            自動加入目標 Transform 設定。
+            <br></br>
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.AutoAddTransform.autoAdd">
+            <summary>
+            Auto add transform if true. <br></br> 當 true 時自動加入 Transform。
+            </summary> 
+        </member>
+        <member name="F:Votanic.vNet.Networking.AutoAddTransform.addChildOnly">
+            <summary>
+            Ignore own transform on auto addition. <br></br> 在自動加入的情況下忽略自身 Transform。
+            </summary> 
+        </member>
+        <member name="F:Votanic.vNet.Networking.AutoAddTransform.recursive">
+            <summary>
+            Recursively add child on auto addition. <br></br> 在自動加入的情況下遞歸加入所有子 Transform。
+            </summary> 
+        </member>
+        <member name="T:Votanic.vNet.Networking.NetworkObject">
+            <summary>
+            The Network Object synchronizes the transform of gameObject across the network.
+            <br></br> 網絡物件，用作在網絡中同步遊戲物件的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.target">
+            <summary>
+            The target transforms for synchronization. <br></br> 同步的目標 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.autoAddTransform">
+            <summary>
+            Auto add target transform setting. <br></br> 自動加入目標 Transform 設定。
+            </summary> 
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.syncTransform">
+            <summary>
+            The synchronizes part of tranform. <br></br> 同步的變換部份。
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.NetworkObject.OnSync">
+            <summary>
+            Delegate for sync.
+            同步委派。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.Sync">
+            <summary>
+            Sync the network object.
+            <br></br> 同步網絡物件。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.sendFrameGap">
+            <summary>
+            The gap between each synchronization. <br></br> 每次同步的間隔。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.movementThreshold">
+            <summary>
+            Movement threshold. <br></br> 移動閾值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.angleThreshold">
+            <summary>
+            Angle threshold. <br></br> 角度閾值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.scaleThreshold">
+            <summary>
+            Scale threshold. <br></br> 大小閾值。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.distanceBeforeSnap">
+            <summary>
+            The distance change before snap. <br></br> 最大平滑變動距離。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.angleBeforeSnap">
+            <summary>
+            The angle change before snap. <br></br> 最大平滑變動角度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.scaleBeforeSnap">
+            <summary>
+            The scale change before snap. <br></br> 最大平滑變動大小。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.movementInterpolation">
+            <summary>
+            Movement interpolation. <br></br> 移動插補。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.rotationInterpolation">
+            <summary>
+            Rotation interpolation. <br></br> 旋轉插補。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.scaleInterpolation">
+            <summary>
+            Scale interpolation. <br></br> 縮放插補。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.thresholdMovementPrediction">
+            <summary>
+            Movement threshold prediction. <br></br> 移動閾值預測。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.thresholdRotationPrediction">
+            <summary>
+            Rotation threshold prediction. <br></br> 角度閾值預測。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.thresholdScalePrediction">
+            <summary>
+            Scale threshold prediction. <br></br> 大小閾值預測。
+            </summary>
+        </member>
+        <member name="P:Votanic.vNet.Networking.NetworkObject.waitingAuthority">
+            <summary>
+            Waiting the authority and pause synchronization. <br></br> 等待權限及暫停同步。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkObject.isKinematic">
+            <summary>
+            Sync field for new joined network user to get rigidbody kinematic state. <br></br> 給新加入網絡用戶同步的欄，以獲取剛體運動狀態。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkObject.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkObject.FixedUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Votanic.vNet.Networking.NetworkUser">
+            <summary>
+            The Network User component contains user information and synchronizes the transform of gameObject across the network.
+            <br></br> 網絡使用者組件，包含使用者資訊及用作在網絡中同步遊戲物件的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkUser.userID">
+            <summary>
+            User unique identifier. <br></br> 使用者唯一識別碼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vNet.Networking.NetworkUser.userName">
+            <summary>
+            User name. <br></br> 使用者名稱。
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkUser.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.vNet.Networking.NetworkUser.Update">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

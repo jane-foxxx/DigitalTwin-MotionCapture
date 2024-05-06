@@ -1,0 +1,861 @@
+{
+    "Format": "Option",
+    "Version": "2020.8.8",
+    "Menu": {
+        "PanelEdge": 25.0,
+        "PanelVacancy": 8.0,
+        "ButtonGap": 10.0,
+        "PanelTransition": {
+            "OriginColor": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "OriginAlpha": 1.0,
+            "Transition": {
+                "Parameter": "Time",
+                "TransitionFactor": 0.25,
+                "AccelerationFactor": 0.0,
+                "DecelerationFactor": 0.0
+            },
+            "Disable": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            },
+            "Close": {
+                "Movement": [
+                    0.0,
+                    -200.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 0.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            }
+        },
+        "ButtonTransition": {
+            "OriginColor": [
+                0.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "OriginAlpha": 1.0,
+            "Transition": {
+                "Parameter": "Time",
+                "TransitionFactor": 0.25,
+                "AccelerationFactor": 0.0,
+                "DecelerationFactor": 0.0
+            },
+            "Disable": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            },
+            "Select": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    -16.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            },
+            "Click": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            }
+        },
+        "Panel": [
+            {
+                "Name": "Main",
+                "Level": 0,
+                "Grabbable": true,
+                "Button": [
+                    {
+                        "Name": "Info",
+                        "Icon": 0,
+                        "InteractionType": "Up",
+                        "Command": "Menu=1",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Attribute",
+                        "Icon": 1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=2",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Tool",
+                        "Icon": 2,
+                        "InteractionType": "Up",
+                        "Command": "Menu=3",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Reset",
+                        "Icon": 3,
+                        "InteractionType": "Up",
+                        "Command": "Menu=4",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Quality",
+                        "Icon": 4,
+                        "InteractionType": "Up",
+                        "Command": "Menu=5",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    }
+                ]
+            },
+            {
+                "Name": "Info",
+                "Level": 1,
+                "Grabbable": true,
+                "Button": [
+                    {
+                        "Name": "Message",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Info=Message",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "FPS",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Info=FPS",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "DebugLog",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Info=DebugLog",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "PrintLog",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Info=PrintLog",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Back",
+                        "Icon": -101,
+                        "InteractionType": "Up",
+                        "Command": "Menu=0",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    }
+                ]
+            },
+            {
+                "Name": "Attribute",
+                "Level": 1,
+                "Grabbable": true,
+                "Button": [
+                    {
+                        "Name": "Traveler",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Attribute=Traveler",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Soul",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Attribute=Soul",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Debug",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Attribute=Debug",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Tracking",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Attribute=Tracking",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Stereo",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Attribute=Stereo",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Test3D",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Attribute=Test3D",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Back",
+                        "Icon": -101,
+                        "InteractionType": "Up",
+                        "Command": "Menu=0",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    }
+                ]
+            },
+            {
+                "Name": "Tool",
+                "Level": 1,
+                "Grabbable": true,
+                "Button": []
+            },
+            {
+                "Name": "Reset",
+                "Level": 1,
+                "Grabbable": true,
+                "Button": [
+                    {
+                        "Name": "Scene",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Reset=Scene",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Frame",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Reset=Frame",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Users",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Reset=Users",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "DebugRotation",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Reset=DebugRotation",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Back",
+                        "Icon": -101,
+                        "InteractionType": "Up",
+                        "Command": "Menu=0",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    }
+                ]
+            },
+            {
+                "Name": "Quality",
+                "Level": 1,
+                "Grabbable": true,
+                "Button": [
+                    {
+                        "Name": "Anisotropic",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Quality=Anisotropic",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "AntiAliasing",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Quality=AntiAliasing",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Shadows",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Quality=Shadows",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "ShadowRes",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Menu=Quality=ShadowRes",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    },
+                    {
+                        "Name": "Back",
+                        "Icon": -101,
+                        "InteractionType": "Up",
+                        "Command": "Menu=0",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    }
+                ]
+            }
+        ]
+    },
+    "Landing": {
+        "Apply": false,
+        "Screen": "UIScreen",
+        "FitScreen": true,
+        "OnScreenOffset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "OnScreenAngle": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "BackgroundPath": "../Resources/VotanicXR/Landing/Background",
+        "ButtonImagePath": "../Resources/VotanicXR/Landing",
+        "DefaultPosition": [
+            0.0,
+            1.5,
+            2.0
+        ],
+        "DefaultRotation": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "DefaultSize": [
+            4000.0,
+            3000.0
+        ],
+        "ButtonSize": [
+            1024.0,
+            1024.0
+        ],
+        "ButtonOffset": [
+            0.0,
+            0.0
+        ],
+        "ButtonGap": [
+            128.0,
+            128.0
+        ],
+        "MaxButtonsCount": [
+            3
+        ],
+        "Slidable": 4,
+        "SlidingSpeed": 8.0,
+        "LandingTransition": {
+            "OriginColor": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "OriginAlpha": 1.0,
+            "Transition": {
+                "Parameter": "Time",
+                "TransitionFactor": 0.25,
+                "AccelerationFactor": 0.0,
+                "DecelerationFactor": 0.0
+            },
+            "Disable": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            },
+            "Close": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 0.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            }
+        },
+        "PanelTransition": {
+            "OriginColor": [
+                1.0,
+                1.0,
+                1.0,
+                0.0
+            ],
+            "OriginAlpha": 1.0,
+            "Transition": {
+                "Parameter": "Time",
+                "TransitionFactor": 0.25,
+                "AccelerationFactor": 0.0,
+                "DecelerationFactor": 0.0
+            },
+            "Disable": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            },
+            "Close": {
+                "Movement": [
+                    0.0,
+                    -200.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Alpha": 0.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            }
+        },
+        "ButtonTransition": {
+            "OriginColor": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "OriginAlpha": 1.0,
+            "Transition": {
+                "Parameter": "Time",
+                "TransitionFactor": 0.25,
+                "AccelerationFactor": 0.0,
+                "DecelerationFactor": 0.0
+            },
+            "Disable": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            },
+            "Select": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    -16.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    0.05000000074505806
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            },
+            "Click": {
+                "Movement": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scaling": [
+                    -0.05000000074505806,
+                    -0.05000000074505806,
+                    -0.05000000074505806
+                ],
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Alpha": 1.0,
+                "Outline": {
+                    "Enable": false,
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Width": 0.0,
+                    "Mode": "OutlineAll"
+                }
+            }
+        },
+        "Panel": [
+            {
+                "Name": "Main",
+                "Level": 0,
+                "Grabbable": false,
+                "Button": [
+                    {
+                        "Name": "Test",
+                        "Icon": -1,
+                        "InteractionType": "Up",
+                        "Command": "Landing=Close",
+                        "Value": 1.0,
+                        "Target": -1,
+                        "Commands": []
+                    }
+                ]
+            }
+        ]
+    },
+    "Teleport": {
+        "MaxStorePoint": 10,
+        "Waypoint": []
+    },
+    "ScenesInBuild": []
+}

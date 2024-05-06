@@ -1,0 +1,83 @@
+{
+   "action_manifest_version": 1,
+   "bindings" : {
+      "/actions/default" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "single" : {
+                     "output" : "/actions/default/in/togglemenu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/gamepad/input/y"
+            }
+         ]
+      },
+      "/actions/move" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/move/in/turnright"
+                  },
+                  "west" : {
+                     "output" : "/actions/move/in/turnleft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "90",
+                  "overlap_pct" : "0",
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/gamepad/input/joystick_right"
+            },
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/move/in/teleport"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "90",
+                  "overlap_pct" : "0",
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/gamepad/input/joystick_left"
+            },
+            {
+               "inputs" : {
+                  "single" : {
+                     "output" : "/actions/move/in/teleport"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/gamepad/input/trigger_right"
+            },
+            {
+               "inputs" : {
+                  "single" : {
+                     "output" : "/actions/move/in/turnleft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/gamepad/input/shoulder_left"
+            },
+            {
+               "inputs" : {
+                  "single" : {
+                     "output" : "/actions/move/in/turnright"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/gamepad/input/shoulder_right"
+            }
+         ]
+      }
+   },
+   "controller_type" : "gamepad",
+   "description" : "Default Gamepad bindings for SteamVR Home.",
+   "name" : "Default Gamepad Bindings"
+}

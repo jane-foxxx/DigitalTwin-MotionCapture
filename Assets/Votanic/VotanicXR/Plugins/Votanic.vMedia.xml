@@ -1,0 +1,1018 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Votanic.vMedia</name>
+    </assembly>
+    <members>
+        <member name="T:Votanic.vMedia.MediaType">
+            <summary>
+            Type of media.
+            <br></br> 媒體類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaType.Any">
+            <summary>
+            Any types. <br></br> 任何類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaType.Audio">
+            <summary>
+            wav, ogg
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaType.Image">
+            <summary>
+            jpg, png, tga, exr
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaType.Video">
+            <summary>
+            mp4, mov, mkv, avi
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaType.Text">
+            <summary>
+            txt
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaType.Json">
+            <summary>
+            json
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaType.XML">
+            <summary>
+            xml
+            </summary>
+        </member>
+        <member name="T:Votanic.vMedia.ExternalAudio">
+            <summary>
+            External audio setting.
+            <br></br> 外置音訊設定。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.ExternalAudio.channel">
+            <summary>
+            Channel of audio. <br></br> 音訊頻道。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.ExternalAudio.useAudioDuration">
+            <summary>
+            Media original duration will be overrided if true. <br></br> 當 true 時將會覆寫媒體原先長度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.ExternalAudio.muteSource">
+            <summary>
+            Mute media origin audio if true. <br></br> 當 true 時將媒體原音訊靜音。
+            </summary>
+        </member>
+        <member name="T:Votanic.vMedia.Media">
+            <summary>
+            Class of media files.
+            <br></br> 媒體檔案類別。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.Media.path">
+            <summary>
+            Path of media wanted to read. <br></br> 想讀取的媒體路徑。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.Media.type">
+            <summary>
+            Type of media wanted to read. <br></br> 想讀取的媒體類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.Media.audioChannel">
+            <summary>
+            Channel of audio type media. <br></br> 音訊類型的媒體頻道。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.Media.imageDuration">
+            <summary>
+            Play duration of image type media. <br></br> 影像類型的媒體播放長度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.Media.videoPreview">
+            <summary>
+            Load preview image of video type media if true. <br></br> 當 true 時載入視訊類型的預覽影像。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.Media.externalAudio">
+            <summary>
+            External audio setting. <br></br> 外置音訊設定。
+            </summary>
+        </member>
+        <member name="P:Votanic.vMedia.Media.mediaIndex">
+            <summary>
+            Index on media player. <br></br> 在媒體播放器的編號。
+            </summary>
+        </member>
+        <member name="P:Votanic.vMedia.Media.duration">
+            <summary>
+            Play duration of media. <br></br> 媒體播放長度。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.Media.#ctor(System.String,System.Int32,System.Single,System.Boolean,Votanic.vMedia.ExternalAudio)">
+            <summary>
+            Declare a media.
+            <br></br> 宣告一個媒體。
+            </summary>
+            <param name="path"> Path of media wanted to read <br></br> 想讀取的媒體路徑 </param>
+            <param name="audioChannel"> Channel of audio type media <br></br> 音訊類型的媒體頻道 </param>
+            <param name="imageDuration"> Play duration of image type media <br></br> 影像類型的媒體播放長度 </param>
+            <param name="videoPreview"> Load preview image of video type media if true <br></br> 當 true 時載入視訊類型的預覽影像 </param>
+            <param name="externalAudio"> External audio setting <br></br> 外置音訊設定 </param>
+        </member>
+        <member name="M:Votanic.vMedia.Media.LoadImage(System.String)">
+            <summary>
+            Load an image from file.
+            <br></br> 在檔案載入影像。
+            <para> Texture2D t = LoadImage("../Resources/Image/abc.png") </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+        </member>
+        <member name="M:Votanic.vMedia.Media.SaveJPG(System.String,UnityEngine.Texture2D)">
+            <summary>
+            Save an image from Unity to storage as JPG format.
+            <br></br> 將影像儲存為 jpg 格式。
+            <para> SaveJPG("../Resources/Image/abc.jpg", texture) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="texture"> The image <br></br> 影像 </param>
+        </member>
+        <member name="M:Votanic.vMedia.Media.SavePNG(System.String,UnityEngine.Texture2D)">
+            <summary>
+            Save an image from Unity to storage as PNG format.
+            <br></br> 將影像儲存為 png 格式。
+            <para> SavePNG("../Resources/Image/abc.png", texture) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="texture"> The image <br></br> 影像 </param>
+        </member>
+        <member name="M:Votanic.vMedia.Media.SaveTGA(System.String,UnityEngine.Texture2D)">
+            <summary>
+            Save an image from Unity to storage as TGA format.
+            <br></br> 將影像儲存為 tga 格式。
+            <para> SaveTGA("../Resources/Image/abc.tga", texture) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="texture"> The image <br></br> 影像 </param>
+        </member>
+        <member name="M:Votanic.vMedia.Media.SaveEXR(System.String,UnityEngine.Texture2D)">
+            <summary>
+            Save an image from Unity to storage as EXR format.
+            <br></br> 將影像儲存為 exr 格式。
+            <para> SaveTGA("../Resources/Image/abc.exr", texture) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="texture"> The image <br></br> 影像 </param>
+        </member>
+        <member name="M:Votanic.vMedia.Media.LoadAudio(System.String,UnityEngine.AudioType,UnityEngine.AudioSource)">
+            <summary>
+            Load an image from url or file.
+            <br></br> 在網址或檔案載入影像。
+            <para> StartCoroutine(LoadAudio("../Resources/Audio/abc.mp3", AudioType.MPEG, audioSource)) </para>
+            </summary>
+            <param name="path"> Path <br></br> 路徑 </param>
+            <param name="type"> Audo type <br></br> 音訊種類 </param>
+            <param name="audioSource"> Audio soruce component <br></br> 音訊源頭組件 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.vMedia.Media.Type(System.String)">
+            <summary>
+            Retrun media type from extension.
+            <br></br> 由副檔名傳回媒體類型。
+            <para> Type(".mp3") </para>
+            </summary>
+            <param name="extension"> Extension <br></br> 副檔名 </param>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.vMedia.MediaPlayer.Loop">
+            <summary>
+            Loop setting of media player.
+            <br></br> 媒體播放器的循環設定。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.Loop.None">
+            <summary>
+            No looping. <br></br> 不循環。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.Loop.One">
+            <summary>
+            Loop one medium. <br></br> 循環單一媒體。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.Loop.All">
+            <summary>
+            Loop all the media <br></br> 循環所有媒體。
+            </summary>
+        </member>
+        <member name="T:Votanic.vMedia.MediaPlayer.SliderControl">
+            <summary>
+            Slider control element.
+            <br></br> 滑動控制元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.SliderControl.handler">
+            <summary>
+            Handler transform. <br></br> 處理器的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.SliderControl.minPoint">
+            <summary>
+            Minimum Point transform. <br></br> 最小值的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.SliderControl.maxPoint">
+            <summary>
+            Maximum Point transform. <br></br> 最大值的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.SliderControl.x">
+            <summary>
+            Compare X axis. <br></br> 比較 X 軸。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.SliderControl.y">
+            <summary>
+            Compare Y axis. <br></br> 比較 Y 軸。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.SliderControl.z">
+            <summary>
+            Compare Z axis. <br></br> 比較 Z 軸。
+            </summary>
+        </member>
+        <member name="T:Votanic.vMedia.MediaPlayer.MediaPlayer">
+            <summary>
+            Media player class for playing Audio, Image and Video.
+            <br></br> 媒體播放器類別，用於播放音訊、影像及視訊。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.fileLocation">
+            <summary>
+            The relative folder location of files. <br></br> 檔案的相對文件夾位置。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.media">
+            <summary>
+            List of media. <br></br> 媒體列表。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.ignoreList">
+            <summary>
+            The media list wanted to be ignored in current launch. <br></br> 在當前啟動中希望被忽略的媒體列表。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.autoPlay">
+            <summary>
+            Auto play media if true. <br></br> 當 true 時自動播放媒體。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.autoNext">
+            <summary>
+            Auto open next media if true. <br></br> 當 true 時自動跳到下一個媒體。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.random">
+            <summary>
+            Randomly play media. <br></br> 隨機播放媒體。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.loop">
+            <summary>
+            Loop setting of media player. <br></br> 媒體播放器的循環設定。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.volume">
+            <summary>
+            Volume of media player. <br></br> 媒體播放器音量。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.mute">
+            <summary>
+            Mute media player if true. <br></br> 當 true 時把媒體靜音。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.defaultTexture">
+            <summary>
+            Default texture display on UI or Mesh attached. <br></br> 預設的顯示紋理。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.renderers">
+            <summary>
+            The mesh of objects used to display media. <br></br> 用作顯示媒體的物件 Mesh。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.uiElements">
+            <summary>
+            The UI raw images used to display media. <br></br> 用作顯示媒體的 UI Raw Image 組件。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.volumeControl">
+            <summary>
+            Volume control element. <br></br> 音量控制元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.timeControl">
+            <summary>
+            Time control element. <br></br> 時間控制元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.timeText">
+            <summary>
+            Text elements to display time and duration. <br></br> Text 元素用於顯示時間及總長度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.timeBar">
+            <summary>
+            Image elements to display time duration percentage. <br></br> Image 元素用於顯示時間及總長度百分比。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.volumeText">
+            <summary>
+            Text elements to display volume. <br></br> Text 元素用於顯示音量。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.volumeBar">
+            <summary>
+            Image elements to display volume percentage. <br></br> Image 元素用於顯示音量百分比。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.playPauseButton">
+            <summary>
+            Raw Image elements of Play Pause button. <br></br> 播放及暫停按鈕的 Raw Image 元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.loopButton">
+            <summary>
+            Raw Image elements of Loop button. <br></br> 循環按鈕的 Raw Image 元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.randomButton">
+            <summary>
+            Raw Image elements of Random button. <br></br> 隨機按鈕的 Raw Image 元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.muteButton">
+            <summary>
+            Raw Image elements of Mute button. <br></br> 靜音按鈕的 Raw Image 元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.autoPlayButton">
+            <summary>
+            Raw Image elements of Auto Play button. <br></br> 自動播放按鈕的 Raw Image 元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.autoNextButton">
+            <summary>
+            Raw Image elements of Auto Next button. <br></br> 自動跳至下一個媒體按鈕的 Raw Image 元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.playPauseTexture">
+            <summary>
+            Textures for Play Pause state. <br></br> 播放及暫停狀態的紋理。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.loopTexture">
+            <summary>
+            Textures for Loop state. <br></br> 循環狀態的紋理。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.randomTexture">
+            <summary>
+            Textures for Random state. <br></br> 隨機狀態的紋理。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.muteTexture">
+            <summary>
+            Textures for Mute state. <br></br> 靜音狀態的紋理。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.autoPlayTexture">
+            <summary>
+            Textures for Auto Play state. <br></br> 自動播放狀態的紋理。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.autoNextTexture">
+            <summary>
+            Textures for Auto Next state. <br></br> 自動跳至下一個媒體狀態的紋理。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.initialized">
+            <summary>
+            Return true if media player is initialized. <br></br> 當媒體播放器初始化後傳回 true。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.current">
+            <summary>
+            The current medium. <br></br> 目前媒體。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.time">
+            <summary>
+            Current time of medium. <br></br> 媒體目前時間。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.duration">
+            <summary>
+            Duration of current medium. <br></br> 目前媒體的長度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.timeDuration">
+            <summary>
+            String of time and duration. <br></br> 時間及長度字串。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.isPlaying">
+            <summary>
+            Return true if the media player is playing. <br></br> 當媒體播放器播放時傳回 true。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.isPaused">
+            <summary>
+            Return true if the media player is paused. <br></br> 當媒體播放器暫停時傳回 true。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.isFinished">
+            <summary>
+            Return true if the media player is totally finished playing. <br></br> 當媒體播放器完全播放結束時傳回 true。
+            </summary>
+        </member>
+        <member name="P:Votanic.vMedia.MediaPlayer.MediaPlayer.currentMedia">
+            <summary>
+            Return the current media is loaded. <br></br> 傳回目前載入的媒體。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.audios">
+            <summary>
+            Audios loaded. <br></br> 已載入的音訊。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.images">
+            <summary>
+            Images loaded. <br></br> 已載入的影像。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer.videos">
+            <summary>
+            Video preview images. <br></br> 視訊預覽影像。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Open(System.String)">
+            <summary>
+            Clear all loaded media and Load all media in the target path.
+            <br></br> 清除已載入的所有媒體及載入目標路徑中的所有媒體。
+            <para> Open("../Resources/Media") </para>
+            </summary>
+            <param name="path"> Directory or File path <br></br> 目錄或檔案路徑 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play">
+            <summary>
+            Play media.
+            <br></br> 播放媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play(System.Single,System.Single)">
+            <summary>
+            Play media from start time to end time.
+            <br></br> 由開始時間播放媒體至結束時間。
+            <para> Play(0, -1) </para>
+            </summary>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play(System.Int32,System.Single,System.Single)">
+            <summary>
+            Play media from start time to end time.
+            <br></br> 由開始時間播放媒體至結束時間。
+            <para> Play(0, 0, -1) </para>
+            </summary>
+            <param name="index"> Media index <br></br> 媒體編號 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play(System.String,System.Single,System.Single)">
+            <summary>
+            Play media from start time to end time.
+            <br></br> 由開始時間播放媒體至結束時間。
+            <para> Play("abc.mp4", 0, -1) </para>
+            </summary>
+            <param name="name"> Media name <br></br> 媒體名稱 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play(System.Int32,System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            Play media from start time to end time with external audio.
+            <br></br> 由開始時間播放媒體及外置音訊至結束時間。
+            <para> Play(0, 1, 0, 0, -1) </para>
+            </summary>
+            <param name="index"> Media index <br></br> 媒體編號 </param>
+            <param name="auidoChannel"> External audio channel <br></br> 外置音訊頻道 </param>
+            <param name="audioIndex"> External audio index <br></br> 外置音訊編號 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play(System.String,System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            Play media from start time to end time with external audio.
+            <br></br> 由開始時間播放媒體及外置音訊至結束時間。
+            <para> Play("abc.mp4", 1, 0, 0, -1) </para>
+            </summary>
+            <param name="name"> Media name <br></br> 媒體名稱 </param>
+            <param name="auidoChannel"> External audio channel <br></br> 外置音訊頻道 </param>
+            <param name="audioIndex"> External audio index <br></br> 外置音訊編號 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play(System.Int32,System.Int32,System.String,System.Single,System.Single)">
+            <summary>
+            Play media from start time to end time with external audio.
+            <br></br> 由開始時間播放媒體及外置音訊至結束時間。
+            <para> Play(0, 1, "def.mp3", 0, -1) </para>
+            </summary>
+            <param name="index"> Media index <br></br> 媒體編號 </param>
+            <param name="auidoChannel"> External audio channel <br></br> 外置音訊頻道 </param>
+            <param name="audioName"> External audio index <br></br> 外置音訊名稱 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Play(System.String,System.Int32,System.String,System.Single,System.Single)">
+            <summary>
+            Play media from start time to end time with external audio.
+            <br></br> 由開始時間播放媒體及外置音訊至結束時間。
+            <para> Play("abc.mp4", 1, "def.mp3", 0, -1) </para>
+            </summary>
+            <param name="name"> Media name <br></br> 媒體名稱 </param>
+            <param name="auidoChannel"> External audio channel <br></br> 外置音訊頻道 </param>
+            <param name="audioName"> External audio index <br></br> 外置音訊名稱 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Seek">
+            <summary>
+            Seek the time of media by time control slider.
+            <br></br> 根據時間控制滑動器尋找媒體時間。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Seek(System.Boolean)">
+            <summary>
+            Seek the time of media by time control slider.
+            <br></br> 根據時間控制滑動器尋找媒體時間。
+            <para> Seek() </para>
+            </summary>
+            <param name="play"> Play after seek <br></br> 在尋找完成後播放 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Stop">
+            <summary>
+            Stop the current medium.
+            <br></br> 停止播放目前媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.StopAll">
+            <summary>
+            Stop all channels media.
+            <br></br> 停止播放所有頻道媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Pause">
+            <summary>
+            Pause the media player.
+            <br></br> 暫停媒體播放器。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.UnPause">
+            <summary>
+            UnPause the media player.
+            <br></br> 繼續播放媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.PlayPause">
+            <summary>
+            Play or pause the media player.
+            播放或暫停媒體播放器。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Next">
+            <summary>
+            Goto next medium.
+            <br></br> 跳至下一個媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Next(System.Int32,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Goto next medium.
+            <br></br> 跳至下個媒體。
+            <para> Next(1, 0, -1) </para>
+            </summary>
+            <param name="next"> Next to <br></br> 跳至下幾個 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+            <param name="play"> Play the media <br></br> 播放媒體 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Last">
+            <summary>
+            Goto last medium.
+            <br></br> 跳至最後一個媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Last(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Goto last medium.
+            <br></br> 跳至最後一個媒體。
+            <para> Last(0, -1) </para>
+            </summary>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+            <param name="play"> Play the media <br></br> 播放媒體 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Previous">
+            <summary>
+            Goto previous medium.
+            <br></br> 跳至上個媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.Previous(System.Int32,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Goto previous medium.
+            <br></br> 跳至上個媒體。
+            <para> Previous(1, 0, -1) </para>
+            </summary>
+            <param name="previous"> Previous to <br></br> 跳至上幾個 </param>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+            <param name="play"> Play the media <br></br> 播放媒體 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.First">
+            <summary>
+            Goto first medium.
+            <br></br> 跳至第一個媒體。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.First(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Goto first medium.
+            <br></br> 跳至第一個媒體。
+            <para> First(0, -1) </para>
+            </summary>
+            <param name="start"> Start time <br></br> 開始時間 </param>
+            <param name="end"> End time <br></br> 結束時間 
+            <para> Default: -1 = Media length 媒體長度 </para></param>
+            <param name="play"> Play the media <br></br> 播放媒體 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetLoop">
+            <summary>
+            Change loop setting.
+            <br></br> 更改循環設定。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetLoop(Votanic.vMedia.MediaPlayer.Loop)">
+            <summary>
+            Set the loop state.
+            <br></br> 設定循環狀態。
+            <para> SetLoop(Loop.One) </para>
+            </summary>
+            <param name="loop"> Loop setting <br></br> 循環設定 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetRandom">
+            <summary>
+            Change random play setting.
+            <br></br> 更改隨機播放設定。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetRandom(System.Boolean)">
+            <summary>
+            Set random play or not.
+            <br></br> 設定是否隨機播放。
+            <para> SetRandom(true) </para>
+            </summary>
+            <param name="random"> Random play if true <br></br> 當 true 時隨機播放 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetVolume">
+            <summary>
+            Set the volume of media player by volume control slider.
+            <br></br> 根據音樂控制滑動器設定媒體擋放器音量。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetVolume(Votanic.Parameter)">
+            <summary>
+            Set the volume of media player.
+            <br></br> 設定媒體擋放器音量。
+            <para> SetVolume(new Parameter{ single = 1 }) </para>
+            </summary>
+            <param name="parameter"> Paramter class <br></br> 參數類別 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetVolume(System.Single)">
+            <summary>
+            Set the volume of media player.
+            <br></br> 設定媒體擋放器音量。
+            <para> SetVolume(1) </para>
+            </summary>
+            <param name="volume"> Volume <br></br> 音量 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetMute">
+            <summary>
+            Change mute setting.
+            <br></br> 更改靜音設定。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetMute(System.Boolean)">
+            <summary>
+            Set mute or not.
+            <br></br> 設定是否靜音。
+            <para> SetMute(true) </para>
+            </summary>
+            <param name="mute"></param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetAutoPlay">
+            <summary>
+            Change auto play setting.
+            <br></br> 更改自動播放設定。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetAutoPlay(System.Boolean)">
+            <summary>
+            Set auto play or not.
+            <br></br> 設定是否自動播放。
+            <para> SetAutoPlay(true) </para>
+            </summary>
+            <param name="auto"> Auto play if true <br></br> 當 true 時自動播放 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetAutoNext">
+            <summary>
+            Change auto next setting.
+            <br></br> 更改自動跳至下一個媒體設定。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.SetAutoNext(System.Boolean)">
+            <summary>
+            Set auto next.
+            <br></br> 設定是否自動跳至下一個媒體。
+            <para> SetAutoNext(true) </para>
+            </summary>
+            <param name="auto"> Auto next if true <br></br> 當 true 時自動跳至下一個媒體 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.LoadAudio(System.String,System.Int32,UnityEngine.AudioSource,Votanic.vMedia.ExternalAudio)">
+            <summary>
+            Load audio.
+            <br></br> 載入音訊。
+            <para> LoadAudio("C:/abc/def.mp3", 1) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="channel"> Channel of audio type media <br></br> 音訊類型的媒體頻道 </param>
+            <param name="audioSource"> Audio soruce component <br></br> 音訊源頭組件 </param>
+            <param name="audio"> External audio setting <br></br> 外置音訊設定 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.LoadImage(System.String,System.Single,Votanic.vMedia.ExternalAudio)">
+            <summary>
+            Load image.
+            <br></br> 載入影像。
+            <para> LoadImage("C:/abc/def.jpg", 3) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="duration"> Play duration of image type media <br></br> 影像類型的媒體播放長度 </param>
+            <param name="audio"> External audio setting <br></br> 外置音訊設定 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer.LoadVideo(System.String,System.Boolean,Votanic.vMedia.ExternalAudio)">
+            <summary>
+            Load video.
+            <br></br> 載入視訊。
+            <para> LoadVideo("C:/abc/def.mp4", true) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="preview"> Load preview image of video type media if true <br></br> 當 true 時載入視訊類型的預覽影像 </param>
+            <param name="audio"> External audio setting <br></br> 外置音訊設定 </param>
+        </member>
+        <member name="T:Votanic.vMedia.MediaPlayer.MediaPlayer360">
+            <summary>
+            Media player class for playing Audio, Image and Video with 360 degree.
+            <br></br> 媒體播放器類別，用於 360 角度播放音訊、影像及視訊。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.dataPath">
+            <summary>
+            Path of json file which store the media data in the path. <br></br> 儲存與 path 有關的媒體數據的 Json 文件路經。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.zoomer">
+            <summary>
+            Transform for zoom. <br></br> 用作放大的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.rotater">
+            <summary>
+            Transform for rotate. <br></br> 用作旋轉的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.pitcher">
+            <summary>
+            Transform for pitch angle. <br></br> 用作校正俯仰角度的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.calibrator">
+            <summary>
+            Transform for yaw and roll angles. <br></br> 用作校正偏擺及翻滾角度的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.scaler">
+            <summary>
+            Transform for scaling the size of Sphere Inverted Normal. <br></br> 用作調整法線反轉球面大小的 Transform。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.logoElement">
+            <summary>
+            Logo Element for hiding top and bottom of 360 medium. <br></br> 用作隱藏 360 媒體頂及底部的 Logo 元素。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.zoomSpeed">
+            <summary>
+            Zoom speed of zoomer. <br></br> 放大的速度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.rotateSpeed">
+            <summary>
+            Rotate speed of rotater. <br></br> 旋轉的速度。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.rotation">
+            <summary>
+            Rotate with rotate speed if true. <br></br> 當 true 時根據旋轉速度旋轉。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.calibrateFactor">
+            <summary>
+            Calibrate factor for calibrator. <br></br> 校正的因子。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.scale">
+            <summary>
+            Size of sphere. <br></br> 球體的大小。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.zoom">
+            <summary>
+            Cuurent zoom level. <br></br> 目前放大等級。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.MediaPlayer360.logo">
+            <summary>
+            Display logo element. <br></br> 顯示 Logo 元素。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Zoom(System.Int32,UnityEngine.Vector3)">
+            <summary>
+            Change zoom setting of current medium.
+            <br></br> 放大或縮小目前媒體。
+            <para> Zoom(3, new Vector3(0, 0, 1)) </para>
+            </summary>
+            <param name="level"> Zoom level <br></br> 放大等級 
+            <para> -10 ~ 10 </para></param>
+            <param name="direction"> Zoom direction <br></br> 放大方向 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.ResetZoom">
+            <summary>
+            Reset zoom setting of current medium.
+            <br></br> 重置目標媒體放大設定。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Yaw(System.Single)">
+            <summary>
+            Calibrate the yaw angle of current medium.
+            <br></br> 校正目前媒體的偏擺角。
+            <para> Yaw(5) </para>
+            </summary>
+            <param name="angle"> Calibrate angle <br></br> 校正角度 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Pitch(System.Single)">
+            <summary>
+            Calibrate the pitch angle of current medium.
+            <br></br> 校正目前媒體的俯仰角。
+            <para> Pitch(5) </para>
+            </summary>
+            <param name="angle"> Calibrate angle <br></br> 校正角度 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Roll(System.Single)">
+            <summary>
+            Calibrate the roll angle of current medium.
+            <br></br> 校正目前媒體的翻滾角。
+            <para> Roll(5) </para>
+            </summary>
+            <param name="angle"> Calibrate angle <br></br> 校正角度 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Mirror(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Set the mirror state of current medium.
+            <br></br> 設定目前媒體的鏡像狀態。
+            </summary>
+            <param name="x"> X axis <br></br> X 軸 </param>
+            <param name="y"> Y axis <br></br> Y 軸 </param>
+            <param name="z"> Z axis <br></br> Z 軸 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Mirror">
+            <summary>
+            Change the mirror state of current medium.
+            <br></br> 更改目前媒體的鏡像狀態。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.ResetAngles">
+            <summary>
+            Reset the angles of calibrator.
+            <br></br> 重置校正角度。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.SetStereoType">
+            <summary>
+            Change the stereo type of current medium.
+            <br></br> 更改目前媒體的立體類型。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.SetStereoType(Votanic.vMedia.MediaPlayer.StereoType)">
+            <summary>
+            Set the stereo type of current medium.
+            <br></br> 設定目前媒體的立體類型。
+            <para> SetStereoType(StereoType.UpDown) </para>
+            </summary>
+            <param name="stereoType"> Stereo Type <br></br> 立體類型 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.SetLayers(System.Int32,System.Int32)">
+            <summary>
+            Set left and right eye display layers.
+            <br></br> 設定左右眼顯示層級。
+            <para> SetLayers(26, 27) </para>
+            </summary>
+            <param name="left"> Left layer <br></br> 左層級 </param>
+            <param name="right"> Right layer <br></br> 右層級 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Load">
+            <summary>
+            Load data of media player and media. 
+            讀取播放器及媒體資料。
+            </summary>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.ShowLogo(System.Boolean)">
+            <summary>
+            Show or Hide logo element.
+            <br></br> 顯示或隱藏 Logo 元素。
+            <para> ShowLogo(true) </para>
+            </summary>
+            <param name="show"> Show if true <br></br> 當 true 時顯示 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.SetRotation(System.Boolean)">
+            <summary>
+            Set rotation of media player.
+            <br></br> 設定媒體播放器的旋轉功能。
+            <para> SetRotation(true) </para>
+            </summary>
+            <param name="rorate"> Rotate if true <br></br> 當 true 時旋轉 </param>
+        </member>
+        <member name="M:Votanic.vMedia.MediaPlayer.MediaPlayer360.Save">
+            <summary>
+            Save data of media player and media. 
+            儲存播放器及媒體資料。
+            </summary>
+        </member>
+        <member name="T:Votanic.vMedia.MediaPlayer.StereoType">
+            <summary>
+            Stereo type of the medium.
+            <br></br> 媒體立體類型。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.StereoType.None">
+            <summary>
+            Non stereo medium. <br></br> 非立體媒體。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.StereoType.LeftRight">
+            <summary>
+            Left side for left eye. <br></br> 左側為左眼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.StereoType.RightLeft">
+            <summary>
+            Left side for right eye. <br></br> 左側為右眼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.StereoType.UpDown">
+            <summary>
+            Upper side for left eye. <br></br> 上方為左眼。
+            </summary>
+        </member>
+        <member name="F:Votanic.vMedia.MediaPlayer.StereoType.DownUp">
+            <summary>
+            Upper side for right eye. <br></br> 上方為右眼。
+            </summary>
+        </member>
+    </members>
+</doc>

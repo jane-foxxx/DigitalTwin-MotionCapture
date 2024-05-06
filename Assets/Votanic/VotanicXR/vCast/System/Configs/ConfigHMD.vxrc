@@ -1,0 +1,307 @@
+{
+  "Format": "Config",
+  "Version": "2020.8.8",
+  "System": {
+    "Type": "HMD",
+    "ApplicationDirectory": "%VOTANIC_PATH%/Apps/",
+	"PanoramicAngle": 360,
+    "IOScanOrder": [ "OpenVR", "VInput" ],
+    "Info": [
+      {
+        "Enable": false,
+        "Screen": "InfoScreen",
+        "Alignment": "Right-Top",
+        "WaterMark": {
+          "Enable": true,
+          "Size": [ 1.28, 0.16 ],
+          "Offset": [ 0.05, 0.05 ],
+          "Color": [ 1, 1, 1, 0.6 ]
+        },
+        "Text": {
+          "Enable": true,
+          "CompanyName": true,
+          "ProductName": true,
+          "Version": true,
+          "FPS": true,
+          "DebugLog": true,
+          "Print": true,
+          "FontSize": 96,
+          "Size": [ 3, 3 ],
+          "Offset": [ 0.05, 0.05 ],
+          "Color": [ 1, 1, 1, 0.6 ]
+        }
+      }
+    ],
+    "Device": {
+      "GeneralInput": {
+        "DeadZone": 0.14,
+        "PressDetect": 0.7,
+        "HoldingDuration": 1.0
+      },
+      "Buttons": {
+        "GeneralButtons": [
+        ],
+        "VRPNButtons": [
+        ]
+      },
+      "Axes": {
+        "GeneralAxes": [
+        ],
+        "VRPNAxes": [
+        ]
+      },
+      "Tracker": {
+        "VRPNTracker": [
+        ]
+      }
+    },
+    "Equipment": [
+      {
+        "Name": "TrackerServer",
+        "Coordinate": {
+          "Forward": "-Z",
+          "Up": "+Y",
+          "Right": "+X"
+        },
+        "Mapping": {
+          "IP": "localhost",
+          "Mapper": [
+            {
+              "FromEquipment": "Vive HMD",
+              "ToSystem": "Head"
+            },
+            {
+              "FromEquipment": "Valve HMD",
+              "ToSystem": "Head"
+            },
+            {
+              "FromEquipment": "Oculus HMD",
+              "ToSystem": "Head"
+            },
+            {
+              "FromEquipment": "Windows MR HMD",
+              "ToSystem": "Head"
+            },
+            {
+              "FromEquipment": "Vive Controller",
+              "ToSystem": "Hand"
+            },
+            {
+              "FromEquipment": "Vive Controller - 2",
+              "ToSystem": "Hand2"
+            },
+            {
+              "FromEquipment": "Valve Right Controller",
+              "ToSystem": "Hand"
+            },
+            {
+              "FromEquipment": "Valve Left Controller",
+              "ToSystem": "Hand2"
+            },
+            {
+              "FromEquipment": "Oculus Right Controller",
+              "ToSystem": "Hand"
+            },
+            {
+              "FromEquipment": "Oculus Left Controller",
+              "ToSystem": "Hand2"
+            },
+            {
+              "FromEquipment": "Windows MR Right Controller",
+              "ToSystem": "Hand"
+            },
+            {
+              "FromEquipment": "Windows MR Left Controller",
+              "ToSystem": "Hand2"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Object": {
+    "Node": [
+      {
+        "Name": "User",
+        "Parent": "Null",
+        "Position": [ 0, 0, 0 ],
+        "Rotation": [ 0, 0, 0 ]
+      },
+      {
+        "Name": "Screens",
+        "Parent": "User",
+        "Position": [ 0, 0, 0 ],
+        "Rotation": [ 0, 0, 0 ]
+      }
+    ],
+    "Entity": [
+      {
+        "Name": "Head",
+        "Parent": "User",
+        "Controller": "Null",
+        "Sensor": "Sensor",
+        "Tracker": [ "Head.Tracker" ],
+        "EnableTracking": true,
+        "TrackPosition": true,
+        "TrackRotation": true,
+        "Position": [ 0, 1.5, 0 ],
+        "Rotation": [ 0, 0, 0 ],
+        "PosOffset": [ 0, 0, 0 ],
+        "RotOffset": [ 0, 0, 0 ],
+        "LostTracking": {
+          "LostTransform": "Idle",
+          "Retry": 100,
+          "CustomPosition": [ 0, 0, 0 ],
+          "CustomRotation": [ 0, 0, 0 ]
+        }
+      },
+      {
+        "Name": "Hand",
+        "Parent": "User",
+        "Controller": "Controller",
+        "Sensor": "Null",
+        "Tracker": [ "Hand.Tracker" ],
+        "EnableTracking": true,
+        "TrackPosition": true,
+        "TrackRotation": true,
+        "Position": [ 0, 1, 0.4 ],
+        "Rotation": [ 0, 0, 0 ],
+        "PosOffset": [ 0, 0, 0 ],
+        "RotOffset": [ 0, 0, 0 ],
+        "LostTracking": {
+          "LostTransform": "Idle",
+          "Retry": 100,
+          "CustomPosition": [ 0, 0, 0 ],
+          "CustomRotation": [ 0, 0, 0 ]
+        }
+      },
+      {
+        "Name": "Hand2",
+        "Parent": "User",
+        "Controller": "Controller2",
+        "Sensor": "Null",
+        "Tracker": [ "Hand2.Tracker" ],
+        "EnableTracking": true,
+        "TrackPosition": true,
+        "TrackRotation": true,
+        "Position": [ 0, -99999, -99999 ],
+        "Rotation": [ 0, 180, 0 ],
+        "PosOffset": [ 0, 0, 0 ],
+        "RotOffset": [ 0, 0, 0 ],
+        "LostTracking": {
+          "LostTransform": "Idle",
+          "Retry": 100,
+          "CustomPosition": [ 0, 0, 0 ],
+          "CustomRotation": [ 0, 0, 0 ]
+        }
+      }
+    ],
+    "Screen": [
+      {
+        "Name": "UIScreen",
+        "Parent": "Screens",
+        "Position": [ 0.0, 1.5, 1.5 ],
+        "Rotation": [ 0.0, 0.0, 0.0 ],
+        "Width": 3,
+        "Height": 3,
+        "EnableWarning": false,
+        "WarningDistance": 0.6
+      },
+      {
+        "Name": "InfoScreen",
+        "Parent": "Screens",
+        "Position": [ 1.5, 1.5, 0 ],
+        "Rotation": [ 0, 90, 0 ],
+        "Width": 3,
+        "Height": 3,
+        "EnableWarning": false,
+        "WarningDistance": 0.6
+      }
+    ],
+    "Camera": [
+      {
+        "Name": "MainCamera",
+        "Parent": "Head",
+        "Screen": "Null",
+        "Display": [ 0 ],
+        "Warp": false,
+        "IsStereo": true,
+        "InvertedEye": false,
+        "Stabilization": {
+          "IsStabilizer": false,
+          "Enable": false,
+          "Target": "Head",
+          "LerpFactor": 3.0,
+          "PositionAxes": "All",
+          "MinDistance": 0.01,
+          "RotationAxes": "XY",
+          "MinAngle": 0.1,
+          "WorldSpace": false,
+          "PositionOffset": [ 0, 0, 0 ],
+          "RotationOffset": [ 0, 0, 0 ]
+        },
+        "Position": [ 0, 0, 0 ],
+        "Rotation": [ 0, 0, 0 ]
+      },
+      {
+        "Name": "Stabilizer",
+        "Parent": "Frame",
+        "Screen": "Null",
+        "Display": [ 0 ],
+        "Warp": false,
+        "IsStereo": false,
+        "InvertedEye": false,
+        "Stabilization": {
+          "IsStabilizer": true,
+          "Enable": true,
+          "Target": "Head",
+          "LerpFactor": 3.0,
+          "PositionAxes": "All",
+          "MinDistance": 0.01,
+          "RotationAxes": "XY",
+          "MinAngle": 0.1,
+          "WorldSpace": false,
+          "PositionOffset": [ 0, 0, 0 ],
+          "RotationOffset": [ 0, 0, 0 ]
+        },
+        "Position": [ 0, 0, 0 ],
+        "Rotation": [ 0, 0, 0 ]
+      }
+    ]
+  },
+  "Projection": {
+    "Stereo": {
+      "InterEyeDistance": 0.065,
+      "CameraViews": [
+        {
+          "FieldOfView": 60,
+          "NearClippingPlane": 0.01,
+          "FarClippingPlane": 1000.0,
+          "CustomAspect": false,
+          "Aspect": 1.333333,
+          "DisplayLayers": [],
+          "IgnoreLayers": [],
+          "ReferenceIndex": 0,
+          "Flags": "Skybox"
+        }
+      ]
+    },
+    "Display": [
+      {
+        "Monitor": 0,
+        "Width": 1024,
+        "Height": 768,
+        "Top": 0,
+        "Left": 0,
+        "RefreshRate": 0,
+        "Resolution": [ 0, 0 ],
+        "Viewport": []
+      }
+    ],
+    "Console": {
+      "OverrideScreenSetting": true,
+      "Resolution": [ 1280, 720 ],
+      "Offset": [ 0, 0 ]
+    }
+  }
+}

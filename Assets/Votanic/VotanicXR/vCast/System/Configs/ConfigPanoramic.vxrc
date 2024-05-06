@@ -1,0 +1,842 @@
+{
+    "Format": "Config",
+    "Version": "2020.8.8",
+    "System": {
+        "Type": "Panoramic",
+        "ApplicationDirectory": "%VOTANIC_PATH%/Apps/",
+        "IOScanOrder": [
+            "OpenVR",
+            "VInput",
+            "VRPN"
+        ],
+        "Info": [
+            {
+                "Enable": true,
+                "Screen": "InfoScreen",
+                "Alignment": "Right-Top",
+                "WaterMark": {
+                    "Enable": true,
+                    "Size": [
+                        1.2799999713897706,
+                        0.1599999964237213
+                    ],
+                    "Offset": [
+                        0.05000000074505806,
+                        0.05000000074505806
+                    ],
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.6000000238418579
+                    ]
+                },
+                "Text": {
+                    "Enable": true,
+                    "CompanyName": true,
+                    "ProductName": true,
+                    "Version": true,
+                    "FPS": true,
+                    "DebugLog": true,
+                    "Print": true,
+                    "FontSize": 96,
+                    "Size": [
+                        3.0,
+                        3.0
+                    ],
+                    "Offset": [
+                        0.05000000074505806,
+                        0.05000000074505806
+                    ],
+                    "Color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.6000000238418579
+                    ]
+                }
+            }
+        ],
+        "Device": {
+            "GeneralInput": {
+                "DeadZone": 0.14000000059604646,
+                "PressDetect": 0.699999988079071,
+                "HoldingDuration": 1.0
+            },
+            "Buttons": {
+                "GeneralButtons": [],
+                "VRPNButtons": []
+            },
+            "Axes": {
+                "GeneralAxes": [],
+                "VRPNAxes": []
+            },
+            "Tracker": {
+                "VRPNTracker": []
+            }
+        },
+        "Equipment": [
+            {
+                "Name": "TrackerServer",
+                "Coordinate": {
+                    "Forward": "+Z",
+                    "Up": "+Y",
+                    "Right": "-X"
+                },
+                "Mapping": {
+                    "IP": "localhost",
+                    "Mapper": []
+                }
+            }
+        ]
+    },
+    "Object": {
+        "Node": [
+            {
+                "Name": "User",
+                "Parent": "Null",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "Name": "Screens",
+                "Parent": "User",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "Name": "CameraRig",
+                "Parent": "User",
+                "Position": [
+                    0.0,
+                    1.5,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        ],
+        "Entity": [
+            {
+                "Name": "Head",
+                "Parent": "User",
+                "Position": [
+                    0.0,
+                    1.5,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Controller": "Null",
+                "Sensor": "Sensor",
+                "Tracker": [
+                    "Null"
+                ],
+                "EnableTracking": true,
+                "TrackPosition": true,
+                "TrackRotation": true,
+                "PosOffset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "RotOffset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "LostTracking": {
+                    "LostTransform": "Default",
+                    "Retry": 100,
+                    "CustomPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "CustomRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            },
+            {
+                "Name": "Hand",
+                "Parent": "User",
+                "Position": [
+                    0.0,
+                    1.0,
+                    0.4000000059604645
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Controller": "Controller",
+                "Sensor": "Null",
+                "Tracker": [
+                    "Null"
+                ],
+                "EnableTracking": true,
+                "TrackPosition": true,
+                "TrackRotation": true,
+                "PosOffset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "RotOffset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "LostTracking": {
+                    "LostTransform": "Faraway",
+                    "Retry": 100,
+                    "CustomPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "CustomRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            }
+        ],
+        "Screen": [
+            {
+                "Name": "Screen01",
+                "Parent": "Screens",
+                "Position": [
+                    1.0606601238250733,
+                    1.5,
+                    2.5606601238250734
+                ],
+                "Rotation": [
+                    0.0,
+                    22.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            },
+            {
+                "Name": "Screen02",
+                "Parent": "Screens",
+                "Position": [
+                    2.5606601238250734,
+                    1.5,
+                    1.0606601238250733
+                ],
+                "Rotation": [
+                    0.0,
+                    67.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            },
+            {
+                "Name": "Screen03",
+                "Parent": "Screens",
+                "Position": [
+                    2.5606601238250734,
+                    1.5,
+                    -1.0606601238250733
+                ],
+                "Rotation": [
+                    0.0,
+                    112.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            },
+            {
+                "Name": "Screen04",
+                "Parent": "Screens",
+                "Position": [
+                    1.0606601238250733,
+                    1.5,
+                    -2.5606601238250734
+                ],
+                "Rotation": [
+                    0.0,
+                    157.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            },
+            {
+                "Name": "Screen05",
+                "Parent": "Screens",
+                "Position": [
+                    -1.0606601238250733,
+                    1.5,
+                    -2.5606601238250734
+                ],
+                "Rotation": [
+                    0.0,
+                    202.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            },
+            {
+                "Name": "Screen06",
+                "Parent": "Screens",
+                "Position": [
+                    -2.5606601238250734,
+                    1.5,
+                    -1.0606601238250733
+                ],
+                "Rotation": [
+                    0.0,
+                    247.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            },
+            {
+                "Name": "Screen07",
+                "Parent": "Screens",
+                "Position": [
+                    -2.5606601238250734,
+                    1.5,
+                    1.0606601238250733
+                ],
+                "Rotation": [
+                    0.0,
+                    292.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            },
+            {
+                "Name": "Screen08",
+                "Parent": "Screens",
+                "Position": [
+                    -1.0606601238250733,
+                    1.5,
+                    2.5606601238250734
+                ],
+                "Rotation": [
+                    0.0,
+                    337.5,
+                    0.0
+                ],
+                "Width": 2.296100616455078,
+                "Height": 3.0,
+                "EnableWarning": true,
+                "WarningDistance": 0.6000000238418579
+            }
+        ],
+        "Camera": [
+            {
+                "Name": "Camera01",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    22.5,
+                    0.0
+                ],
+                "Screen": "Screen01",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            },
+            {
+                "Name": "Camera02",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    67.5,
+                    0.0
+                ],
+                "Screen": "Screen02",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            },
+            {
+                "Name": "Camera03",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    112.5,
+                    0.0
+                ],
+                "Screen": "Screen03",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            },
+            {
+                "Name": "Camera04",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    157.5,
+                    0.0
+                ],
+                "Screen": "Screen04",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            },
+            {
+                "Name": "Camera05",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    202.5,
+                    0.0
+                ],
+                "Screen": "Screen05",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            },
+            {
+                "Name": "Camera06",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    247.5,
+                    0.0
+                ],
+                "Screen": "Screen06",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            },
+            {
+                "Name": "Camera07",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    292.5,
+                    0.0
+                ],
+                "Screen": "Screen07",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            },
+            {
+                "Name": "Camera08",
+                "Parent": "CameraRig",
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    337.5,
+                    0.0
+                ],
+                "Screen": "Screen08",
+                "Display": [
+                    0
+                ],
+                "Warp": false,
+                "IsStereo": false,
+                "InvertedEye": false,
+                "Stabilization": {
+                    "IsStabilizer": false,
+                    "Enable": false,
+                    "Target": "Head",
+                    "LerpFactor": 3.0,
+                    "PositionAxes": "All",
+                    "MinDistance": 0.10000000149011612,
+                    "RotationAxes": "XY",
+                    "MinAngle": 5.0,
+                    "WorldSpace": false,
+                    "PositionOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "RotationOffset": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                "CameraViews": []
+            }
+        ]
+    },
+    "Projection": {
+        "Stereo": {
+            "InterEyeDistance": 0.06499999761581421,
+            "CameraViews": [
+                {
+                    "FieldOfView": 60.0,
+                    "NearClippingPlane": 0.009999999776482582,
+                    "FarClippingPlane": 1000.0,
+                    "CustomAspect": false,
+                    "Aspect": 1.3333330154418946,
+                    "DisplayLayers": [],
+                    "IgnoreLayers": [],
+                    "ReferenceIndex": 0,
+                    "Flags": "Skybox"
+                }
+            ]
+        },
+        "Display": [
+            {
+                "Monitor": 0,
+                "Width": 1920,
+                "Height": 3200,
+                "Top": 0,
+                "Left": 0,
+                "RefreshRate": 0,
+                "Resolution": [
+                    0,
+                    0
+                ],
+                "Viewport": [
+                    {
+                        "Name": "V01L",
+                        "Camera": "Camera01",
+                        "EyeSide": "Mono",
+                        "Left": 0,
+                        "Top": 0,
+                        "Width": 960,
+                        "Height": 800
+                    },
+                    {
+                        "Name": "V02L",
+                        "Camera": "Camera02",
+                        "EyeSide": "Mono",
+                        "Left": 960,
+                        "Top": 0,
+                        "Width": 960,
+                        "Height": 800
+                    },
+                    {
+                        "Name": "V03L",
+                        "Camera": "Camera03",
+                        "EyeSide": "Mono",
+                        "Left": 0,
+                        "Top": 800,
+                        "Width": 960,
+                        "Height": 800
+                    },
+                    {
+                        "Name": "V04L",
+                        "Camera": "Camera04",
+                        "EyeSide": "Mono",
+                        "Left": 960,
+                        "Top": 800,
+                        "Width": 960,
+                        "Height": 800
+                    },
+                    {
+                        "Name": "V05L",
+                        "Camera": "Camera05",
+                        "EyeSide": "Mono",
+                        "Left": 0,
+                        "Top": 1600,
+                        "Width": 960,
+                        "Height": 800
+                    },
+                    {
+                        "Name": "V06L",
+                        "Camera": "Camera06",
+                        "EyeSide": "Mono",
+                        "Left": 960,
+                        "Top": 1600,
+                        "Width": 960,
+                        "Height": 800
+                    },
+                    {
+                        "Name": "V07L",
+                        "Camera": "Camera07",
+                        "EyeSide": "Mono",
+                        "Left": 0,
+                        "Top": 2400,
+                        "Width": 960,
+                        "Height": 800
+                    },
+                    {
+                        "Name": "V08L",
+                        "Camera": "Camera08",
+                        "EyeSide": "Mono",
+                        "Left": 960,
+                        "Top": 2400,
+                        "Width": 960,
+                        "Height": 800
+                    }
+                ]
+            }
+        ],
+        "Console": {
+            "OverrideScreenSetting": true,
+            "Resolution": [
+                1280,
+                720
+            ],
+            "Offset": [
+                -1280,
+                0
+            ]
+        }
+    }
+}

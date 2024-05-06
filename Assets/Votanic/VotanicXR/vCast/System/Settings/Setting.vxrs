@@ -1,0 +1,3762 @@
+{
+  "Format": "Setting",
+  "Version": "2020.8.10",
+  "Scene": {
+    "Attribute": {
+      "Traveler": true,
+      "Soul": false,
+      "Debug": false,
+      "Tracking": true,
+      "Stereo": true,
+      "Test3D": false
+    },
+    "Update": {
+      "RefreshRate": 0.20000000298023225,
+      "TargetFrameRate": 120
+    },
+    "Quality": {
+      "ForceQuality": true,
+      "Level": 0,
+      "VSync": 0,
+      "Rendering": {
+        "LightCount": 1,
+        "Anisotropic": "ForcedOn",
+        "AntiAliasing": 8
+      },
+      "Shadows": {
+        "Type": "Hard",
+        "Resolution": "High",
+        "Projection": "CloseFit",
+        "Distance": 100.0,
+        "NearPlaneOffset": 1.0,
+        "Cascades": [
+        ]
+      }
+    },
+    "Frame": {
+      "StartPosition": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "StartRotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Transition": {
+        "Method": "Translation",
+        "Parameter": "Velocity",
+        "TransitionFactor": 20.0,
+        "AccelerationFactor": 10.0,
+        "DecelerationFactor": 10.0,
+        "RotationRatio": 45.0,
+        "FadeColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "FadedDuration": 0.10000000149011612,
+        "UnscaledDeltaTime": false
+      }
+    },
+    "User": [
+      {
+        "Name": "User",
+        "EnableRaising": true,
+        "EnableSinking": true,
+        "StartAsGround": true,
+        "NavigateInWall": false,
+        "UnscaledDeltaTime": false,
+        "Synchronizer": {
+          "Name": "Head",
+          "WithAssist": true,
+          "Assist": [
+          ],
+          "AssistRate": [
+            0.5
+          ],
+          "Height": 2.0,
+          "Width": 0.5,
+          "StepDistance": 0.15000000596046449,
+          "SlopeLimit": 60.0
+        },
+        "Navigator": {
+          "Name": "Hand",
+          "WithAssist": true,
+          "Assist": [
+          ],
+          "MoveSpeed": 2.0,
+          "RotateSpeed": 45.0,
+          "JumpHeight": 1.5,
+          "AccelerationFactor": 3.0
+        },
+        "Transition": {
+          "Method": "Translation",
+          "Parameter": "Time",
+          "TransitionFactor": 0.0,
+          "AccelerationFactor": 0.0,
+          "DecelerationFactor": 0.5,
+          "RotationRatio": 45.0,
+          "FadeColor": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "FadedDuration": 0.10000000149011612,
+          "UnscaledDeltaTime": false
+        }
+      }
+    ]
+  },
+  "Device": {
+    "GeneralInput": {
+      "DeadZone": 0.14000000059604646,
+      "PressDetect": 0.699999988079071,
+      "HoldingDuration": 1.0
+    },
+    "Buttons": {
+      "GeneralButtons": [
+      ],
+      "VRPNButtons": [
+      ]
+    },
+    "Axes": {
+      "GeneralAxes": [
+      ],
+      "VRPNAxes": [
+      ]
+    },
+    "Tracker": {
+      "VRPNTracker": [
+      ]
+    },
+    "Controller": [
+      {
+        "Names": [
+          "Controller"
+        ],
+        "ButtonsName": "",
+        "AxesName": "",
+        "AutoFindButtons": true,
+        "AutoFindAxes": true,
+        "DefaultTool": "Wand",
+        "Tools": [
+          {
+            "Name": "None",
+            "AutoSwitch": true,
+            "EnableScan": false,
+            "ScanLength": 0.0,
+            "PriorityLayer": false,
+            "DetectLayer": [
+            ],
+            "IgnoreLayer": [
+            ],
+            "Position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "WandRay": {
+              "Enable": false,
+              "Interactive": false,
+              "Display": false,
+			  "ApplyLaserPointer": false,
+              "Length": 0.0,
+              "RenderQueue": 3000,
+              "AlwaysOnTop": false,
+              "NormalDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                0.0
+              ],
+              "SelectDisplay": [
+                0.0,
+                1.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "PressDisplay": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "DisableDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                0.5,
+                0.0
+              ],
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "Glove": {
+              "Interactive": false,
+              "Display": true,
+              "NormalOutline": {
+                "Enable": false,
+                "Color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Width": 0.0,
+                "Mode": "OutlineAll"
+              },
+              "SelectOutline": {
+                "Enable": true,
+                "Color": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "PressOutline": {
+                "Enable": true,
+                "Color": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Offset": [
+                -0.02500000037252903,
+                -0.029999999329447748,
+                -0.05000000074505806
+              ],
+              "Radius": 0.10000000149011612
+            }
+          },
+          {
+            "Name": "Wand",
+            "AutoSwitch": true,
+            "EnableScan": true,
+            "ScanLength": 3.0,
+            "PriorityLayer": false,
+            "DetectLayer": [
+              28
+            ],
+            "IgnoreLayer": [
+              29,
+              30,
+              31
+            ],
+            "Position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "WandRay": {
+              "Enable": true,
+              "Interactive": true,
+              "Display": true,
+			  "ApplyLaserPointer": false,
+              "Length": 2.0,
+              "RenderQueue": 3000,
+              "AlwaysOnTop": false,
+              "NormalDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                0.0
+              ],
+              "SelectDisplay": [
+                0.0,
+                1.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "PressDisplay": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "DisableDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                0.5,
+                0.0
+              ],
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "Glove": {
+              "Interactive": false,
+              "Display": false,
+              "NormalOutline": {
+                "Enable": false,
+                "Color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Width": 0.0,
+                "Mode": "OutlineAll"
+              },
+              "SelectOutline": {
+                "Enable": true,
+                "Color": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "PressOutline": {
+                "Enable": true,
+                "Color": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Offset": [
+                -0.02500000037252903,
+                -0.029999999329447748,
+                -0.05000000074505806
+              ],
+              "Radius": 0.10000000149011612
+            }
+          },
+          {
+            "Name": "Teleport",
+            "AutoSwitch": true,
+            "EnableScan": true,
+            "ScanLength": 3.0,
+            "PriorityLayer": false,
+            "DetectLayer": [
+              29,
+              30
+            ],
+            "IgnoreLayer": [
+              29,
+              31
+            ],
+            "Position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "WandRay": {
+              "Enable": false,
+              "Interactive": false,
+              "Display": false,
+			  "ApplyLaserPointer": false,
+              "Length": 0.0,
+              "RenderQueue": 3000,
+              "AlwaysOnTop": false,
+              "NormalDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                0.0
+              ],
+              "SelectDisplay": [
+                0.0,
+                1.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "PressDisplay": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "DisableDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                0.5,
+                0.0
+              ],
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "Glove": {
+              "Interactive": false,
+              "Display": false,
+              "NormalOutline": {
+                "Enable": false,
+                "Color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Width": 0.0,
+                "Mode": "OutlineAll"
+              },
+              "SelectOutline": {
+                "Enable": true,
+                "Color": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "PressOutline": {
+                "Enable": true,
+                "Color": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Offset": [
+                -0.02500000037252903,
+                -0.029999999329447748,
+                -0.05000000074505806
+              ],
+              "Radius": 0.10000000149011612
+            }
+          },
+          {
+            "Name": "Glove",
+            "AutoSwitch": true,
+            "EnableScan": true,
+            "ScanLength": 0.20000000298023225,
+            "PriorityLayer": false,
+            "DetectLayer": [
+              28
+            ],
+            "IgnoreLayer": [
+              29,
+              30,
+              31
+            ],
+            "Position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "WandRay": {
+              "Enable": false,
+              "Interactive": false,
+              "Display": false,
+			  "ApplyLaserPointer": false,
+              "Length": 0.20000000298023225,
+              "RenderQueue": 3000,
+              "AlwaysOnTop": false,
+              "NormalDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                0.0
+              ],
+              "SelectDisplay": [
+                0.0,
+                1.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "PressDisplay": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.25
+              ],
+              "DisableDisplay": [
+                1.0,
+                1.0,
+                1.0,
+                0.5,
+                0.0
+              ],
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "Glove": {
+              "Interactive": true,
+              "Display": true,
+              "NormalOutline": {
+                "Enable": false,
+                "Color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Width": 0.0,
+                "Mode": "OutlineAll"
+              },
+              "SelectOutline": {
+                "Enable": true,
+                "Color": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "PressOutline": {
+                "Enable": true,
+                "Color": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.5
+                ],
+                "Width": 5.0,
+                "Mode": "OutlineAll"
+              },
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Offset": [
+                -0.02500000037252903,
+                -0.029999999329447748,
+                -0.05000000074505806
+              ],
+              "Radius": 0.10000000149011612
+            }
+          }
+        ],
+        "Buttons": [
+          {
+            "Default": false,
+            "ButtonsName": [
+              "Controller (XBOX 360 For Windows).Buttons",
+              "Controller (XBOX 360 For Windows) - 2.Buttons",
+              "Controller (XBOX 360 For Windows) - 3.Buttons",
+              "Controller (XBOX 360 For Windows) - 4.Buttons",
+              "Controller (Xbox 360 Wireless Receiver for Windows).Buttons",
+              "Controller (Xbox 360 Wireless Receiver for Windows) - 2.Buttons",
+              "Controller (Xbox 360 Wireless Receiver for Windows) - 3.Buttons",
+              "Controller (Xbox 360 Wireless Receiver for Windows) - 4.Buttons",
+              "Controller (Xbox One For Windows).Buttons",
+              "Controller (Xbox One For Windows) - 2.Buttons",
+              "Controller (Xbox One For Windows) - 3.Buttons",
+              "Controller (Xbox One For Windows) - 4.Buttons"
+            ],
+            "ButtonsMapping": [
+              {
+                "Button": "A",
+                "Reversed": false
+              },
+              {
+                "Button": "B",
+                "Reversed": false
+              },
+              {
+                "Button": "Y",
+                "Reversed": false
+              },
+              {
+                "Button": "X",
+                "Reversed": false
+              },
+              {
+                "Button": "LB",
+                "Reversed": false
+              },
+              {
+                "Button": "RB",
+                "Reversed": false
+              },
+              {
+                "Button": "Select",
+                "Reversed": false
+              },
+              {
+                "Button": "Start",
+                "Reversed": false
+              },
+              {
+                "Button": "LS",
+                "Reversed": false
+              },
+              {
+                "Button": "RS",
+                "Reversed": false
+              },
+              {
+                "Button": "Left",
+                "Reversed": false
+              },
+              {
+                "Button": "Right",
+                "Reversed": false
+              },
+              {
+                "Button": "Up",
+                "Reversed": false
+              },
+              {
+                "Button": "Down",
+                "Reversed": false
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "ButtonsName": [
+              "Arduino Micro.Buttons",
+              "Arduino Micro - 2.Buttons",
+              "Arduino Micro - 3.Buttons",
+              "Arduino Micro - 4.Buttons"
+            ],
+            "ButtonsMapping": [
+              {
+                "Button": "0",
+                "Reversed": false
+              },
+              {
+                "Button": "1",
+                "Reversed": false
+              },
+              {
+                "Button": "2",
+                "Reversed": false
+              },
+              {
+                "Button": "3",
+                "Reversed": false
+              },
+              {
+                "Button": "4",
+                "Reversed": false
+              },
+              {
+                "Button": "5",
+                "Reversed": false
+              },
+              {
+                "Button": "6",
+                "Reversed": false
+              },
+              {
+                "Button": "7",
+                "Reversed": false
+              },
+              {
+                "Button": "8",
+                "Reversed": false
+              },
+              {
+                "Button": "9",
+                "Reversed": false
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "ButtonsName": [
+              "VRPNButtons1",
+              "VRPNButtons2",
+              "Vive Controller.Buttons",
+              "Vive Controller - 2.Buttons"
+            ],
+            "ButtonsMapping": [
+              {
+                "Button": "Trigger",
+                "Reversed": false
+              },
+              {
+                "Button": "Grip",
+                "Reversed": false
+              },
+              {
+                "Button": "Menu",
+                "Reversed": false
+              },
+              {
+                "Button": "TouchPad",
+                "Reversed": false
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "ButtonsName": [
+              "Valve Right Controller.Buttons",
+              "Valve Left Controller.Buttons"
+            ],
+            "ButtonsMapping": [
+              {
+                "Button": "Trigger",
+                "Reversed": false
+              },
+              {
+                "Button": "Grip",
+                "Reversed": false
+              },
+              {
+                "Button": "Menu",
+                "Reversed": false
+              },
+              {
+                "Button": "TouchPad",
+                "Reversed": false
+              },
+              {
+                "Button": "Back",
+                "Reversed": false
+              },
+              {
+                "Button": "Joystick",
+                "Reversed": false
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "ButtonsName": [
+              "Oculus Right Controller.Buttons",
+              "Oculus Left Controller.Buttons"
+            ],
+            "ButtonsMapping": [
+              {
+                "Button": "Trigger",
+                "Reversed": false
+              },
+              {
+                "Button": "Grip",
+                "Reversed": false
+              },
+              {
+                "Button": "Menu",
+                "Reversed": false
+              },
+              {
+                "Button": "Back",
+                "Reversed": false
+              },
+              {
+                "Button": "Joystick",
+                "Reversed": false
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "ButtonsName": [
+              "Windows MR Right Controller.Buttons",
+              "Windows MR Left Controller.Buttons"
+            ],
+            "ButtonsMapping": [
+              {
+                "Button": "Trigger",
+                "Reversed": false
+              },
+              {
+                "Button": "Grip",
+                "Reversed": false
+              },
+              {
+                "Button": "Menu",
+                "Reversed": false
+              },
+              {
+                "Button": "TouchPad",
+                "Reversed": false
+              },
+              {
+                "Button": "Joystick",
+                "Reversed": false
+              }
+            ]
+          }
+        ],
+        "Axes": [
+          {
+            "Default": false,
+            "AxesName": [
+              "Controller (XBOX 360 For Windows).Axes",
+              "Controller (XBOX 360 For Windows) - 2.Axes",
+              "Controller (XBOX 360 For Windows) - 3.Axes",
+              "Controller (XBOX 360 For Windows) - 4.Axes",
+              "Controller (Xbox 360 Wireless Receiver for Windows).Axes",
+              "Controller (Xbox 360 Wireless Receiver for Windows) - 2.Axes",
+              "Controller (Xbox 360 Wireless Receiver for Windows) - 3.Axes",
+              "Controller (Xbox 360 Wireless Receiver for Windows) - 4.Axes",
+              "Controller (Xbox One For Windows).Axes",
+              "Controller (Xbox One For Windows) - 2.Axes",
+              "Controller (Xbox One For Windows) - 3.Axes",
+              "Controller (Xbox One For Windows) - 4.Axes"
+            ],
+            "AxesMapping": [
+              {
+                "Axis": "LX",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "LY",
+                "Reversed": true,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "LT",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "RX",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "RY",
+                "Reversed": true,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "RT",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "DX",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "DY",
+                "Reversed": false,
+                "AssistButton": -1
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "AxesName": [
+              "Arduino Micro.Axes",
+              "Arduino Micro - 2.Axes",
+              "Arduino Micro - 3.Axes",
+              "Arduino Micro - 4.Axes"
+            ],
+            "AxesMapping": [
+              {
+                "Axis": "0",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "1",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "2",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "3",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "4",
+                "Reversed": true,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "5",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "6",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "7",
+                "Reversed": false,
+                "AssistButton": -1
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "AxesName": [
+              "VRPNAxes1",
+              "VRPNAxes2",
+              "Vive Controller.Axes",
+              "Vive Controller - 2.Axes"
+            ],
+            "AxesMapping": [
+              {
+                "Axis": "Horizontal",
+                "Reversed": false,
+                "AssistButton": 3
+              },
+              {
+                "Axis": "Vertical",
+                "Reversed": false,
+                "AssistButton": 3
+              },
+              {
+                "Axis": "3",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "4",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "5",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "6",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Trigger",
+                "Reversed": false,
+                "AssistButton": -1
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "AxesName": [
+              "Valve Right Controller.Axes",
+              "Valve Left Controller.Axes"
+            ],
+            "AxesMapping": [
+              {
+                "Axis": "Horizontal",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Vertical",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "10",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "TPX",
+                "Reversed": false,
+                "AssistButton": 3
+              },
+              {
+                "Axis": "TPY",
+                "Reversed": false,
+                "AssistButton": 3
+              },
+              {
+                "Axis": "11",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Trigger",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Middle",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Ring",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Pinky",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "PadForce",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "GripForce",
+                "Reversed": false,
+                "AssistButton": -1
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "AxesName": [
+              "Oculus Right Controller.Axes",
+              "Oculus Left Controller.Axes"
+            ],
+            "AxesMapping": [
+              {
+                "Axis": "Horizontal",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Vertical",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "3",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "4",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "5",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "6",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Trigger",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Middle",
+                "Reversed": false,
+                "AssistButton": -1
+              }
+            ]
+          },
+          {
+            "Default": false,
+            "AxesName": [
+              "Windows MR Right Controller.Axes",
+              "Windows MR Left Controller.Axes"
+            ],
+            "AxesMapping": [
+              {
+                "Axis": "TPX",
+                "Reversed": false,
+                "AssistButton": 3
+              },
+              {
+                "Axis": "TPY",
+                "Reversed": false,
+                "AssistButton": 3
+              },
+              {
+                "Axis": "5",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "JX",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "JY",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "6",
+                "Reversed": false,
+                "AssistButton": -1
+              },
+              {
+                "Axis": "Trigger",
+                "Reversed": false,
+                "AssistButton": -1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Sensor": [
+      {
+        "Names": [
+          "Sensor"
+        ],
+        "Parts": [
+          {
+            "Name": "Vision",
+            "Enable": true,
+            "Position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Command": {
+    "ComboTimeLimit": 0.25,
+    "CountTimeLimit": 0.25,
+    "Separator": "=,_|",
+    "BuiltIn": [
+      {
+        "Name": "Quit",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "6"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              },
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "7"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Escape"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Reset=Debug",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "9"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Keypad5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Reset=Scene",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonHold",
+                "Key": [
+                  "9"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardHold",
+                "Key": [
+                  "Keypad5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Reset=User",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "6"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Backspace"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Reset",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonHold",
+                "Key": [
+                  "6"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardHold",
+                "Key": [
+                  "Backspace"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Scan",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "`"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Shadows",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "L"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "FPS",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "B"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Info",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardHold",
+                "Key": [
+                  "B"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Traveler",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "0"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Alpha7"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Soul",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "1"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Alpha8"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Debug",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "3"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Alpha9"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Tracking",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonHold",
+                "Key": [
+                  "0"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardHold",
+                "Key": [
+                  "Alpha7"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Stereo",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonHold",
+                "Key": [
+                  "1"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardHold",
+                "Key": [
+                  "Alpha8"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Test3D",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonHold",
+                "Key": [
+                  "3"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardHold",
+                "Key": [
+                  "Alpha9"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "UserLevelLock",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "RAlt"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "UserLevel=5",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "AxisPress",
+                "Key": [
+                  "5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "+",
+                "Device": "0"
+              },
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "4"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              },
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Alpha5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "UserLevel=4",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "AxisPress",
+                "Key": [
+                  "2"
+                ],
+                "Reversed": false,
+                "AxesDirection": "+",
+                "Device": "0"
+              },
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "4"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              },
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Alpha4"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "UserLevel=3",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "4"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              },
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Alpha3"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "UserLevel=2",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "AxisPress",
+                "Key": [
+                  "5"
+                ],
+                "Reversed": false,
+                "AxesDirection": "+",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Alpha2"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "UserLevel=1",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "AxisPress",
+                "Key": [
+                  "2"
+                ],
+                "Reversed": false,
+                "AxesDirection": "+",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Alpha1"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Move",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Traveler",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "Axis",
+                "Key": [
+                  "1"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "S",
+                  "W"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "Environment",
+                "Index": 0,
+                "Detail": [
+                  "PC",
+                  "DOME"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "S",
+                  "W"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Rotate",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Traveler",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "Axis",
+                "Key": [
+                  "0"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "A",
+                  "D"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Shift",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Traveler",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "Axis",
+                "Key": [
+                  "3"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "LeftArrow",
+                  "RightArrow"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "Environment",
+                "Index": 0,
+                "Detail": [
+                  "PC",
+                  "DOME"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "A",
+                  "D"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Float",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Traveler",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "Axis",
+                "Key": [
+                  "4"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "DownArrow",
+                  "UpArrow"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Turn",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Traveler",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "NonDebug",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "10",
+                  "11"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Keypad4",
+                  "Keypad6"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "JumpSink",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Traveler",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "NonDebug",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "13",
+                  "12"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Keypad2",
+                  "Keypad8"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "HVNavigator",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Debug",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "Axis",
+                "Key": [
+                  "2"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "LeftShift",
+                  "RightShift"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Horizontal",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Debug",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "Axis",
+                "Key": [
+                  "6"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Keypad4",
+                  "Keypad6"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Vertical",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Debug",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "Axis",
+                "Key": [
+                  "7"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Keypad2",
+                  "Keypad8"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Stabilize",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          },
+          {
+            "Type": "Environment",
+            "Index": 0,
+            "Detail": [
+              "HMD"
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardHold",
+                "Key": [
+                  "G"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Trigger",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Tool",
+            "Index": 0,
+            "Detail": [
+              "NotNone"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "0"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Space"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "Environment",
+                "Index": 0,
+                "Detail": [
+                  "PC",
+                  "DOME"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "Space"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "TriggerUp",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Tool",
+            "Index": 0,
+            "Detail": [
+              "NotNone"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "0"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Space"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "Environment",
+                "Index": 0,
+                "Detail": [
+                  "PC",
+                  "DOME"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Space"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Grab",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Tool",
+            "Index": 0,
+            "Detail": [
+              "NotNone"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "1"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "G"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "Environment",
+                "Index": 0,
+                "Detail": [
+                  "PC",
+                  "DOME"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "LShift"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Menu",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonHold",
+                "Key": [
+                  "2"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "M"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "Environment",
+                "Index": 0,
+                "Detail": [
+                  "PC",
+                  "DOME"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "M"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "SetTool",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "UserLevel",
+            "Index": 0,
+            "Detail": [
+              "3"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonUp",
+                "Key": [
+                  "7"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardUp",
+                "Key": [
+                  "Alpha0"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Teleport",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Tool",
+            "Index": 0,
+            "Detail": [
+              "Teleport"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "CommandReceived",
+                "Index": 0,
+                "Detail": [
+                  "TriggerUp"
+                ]
+              }
+            ],
+            "InputDetail": [
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Teleport=Velocity",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [
+          {
+            "Type": "Tool",
+            "Index": 0,
+            "Detail": [
+              "Teleport"
+            ]
+          },
+          {
+            "Type": "Context",
+            "Index": 0,
+            "Detail": [
+            ]
+          }
+        ],
+        "Action": [
+          {
+            "Controller": 0,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "ButtonPress",
+                "Key": [
+                  "3",
+                  "1"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          },
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+              {
+                "Type": "UserLevel",
+                "Index": 0,
+                "Detail": [
+                  "3"
+                ]
+              }
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "[",
+                  "]"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "DomeUI",
+        "Value": [
+          -1.0,
+          1.0
+        ],
+        "Target": -1,
+        "Condition": [],
+        "Action": [
+          {
+            "Controller": -1,
+            "Combo": false,
+            "Count": 1,
+            "Condition": [
+            ],
+            "InputDetail": [
+              {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "LCtrl"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              },
+			  {
+                "Type": "KeyboardPress",
+                "Key": [
+                  "LShift"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              },
+			  {
+                "Type": "KeyboardDown",
+                "Key": [
+                  "D"
+                ],
+                "Reversed": false,
+                "AxesDirection": "Any",
+                "Device": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Custom": [
+    ]
+  },
+  "ScenesInBuild": [
+  ]
+}

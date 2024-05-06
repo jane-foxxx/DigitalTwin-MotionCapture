@@ -1,0 +1,944 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Votanic.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Votanic.License.Processing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Votanic.License.Processing.initialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.License.Processing.SDKLicenseType">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.License.Processing.SDKLicenseInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.License.Processing.ValidateSDK(System.Byte)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.License.Processing.ValidatePlayer">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.License.Processing.ValidateProduct(Votanic.License.ProductInfo)">
+            <summary>
+            
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.HorizontalAlignment">
+            <summary>
+            Horizontal alignment of UI element.
+            <br></br> 使用者介面的水平排版。
+            </summary>
+        </member>
+        <member name="F:Votanic.HorizontalAlignment.Left">
+            <summary>
+            Place UI to left side. <br></br> 將介面放在左面。
+            </summary>
+        </member>
+        <member name="F:Votanic.HorizontalAlignment.Center">
+            <summary>
+            Place UI to the center. <br></br> 將介面置中。
+            </summary>
+        </member>
+        <member name="F:Votanic.HorizontalAlignment.Right">
+            <summary>
+            Place UI to right side. <br></br> 將介面放在右面。
+            </summary>
+        </member>
+        <member name="T:Votanic.VerticalAlignment">
+            <summary>
+            Vertical alignment of UI element.
+            <br></br> 使用者介面的垂直排版。
+            </summary>
+        </member>
+        <member name="F:Votanic.VerticalAlignment.Top">
+            <summary>
+            Place UI to upper side. <br></br> 將介面放在上面。
+            </summary>
+        </member>
+        <member name="F:Votanic.VerticalAlignment.Middle">
+            <summary>
+            Place UI to the middle. <br></br> 將介面置中。
+            </summary>
+        </member>
+        <member name="F:Votanic.VerticalAlignment.Bottom">
+            <summary>
+            Place UI to lower side. <br></br> 將介面放在下面。
+            </summary>
+        </member>
+        <member name="T:Votanic.Util">
+            <summary>
+            Util static methods for Votanic project development.
+            <br></br> Votanic 項目開發實用的靜態方法。
+            </summary>
+        </member>
+        <member name="M:Votanic.Util.Layers(System.Boolean,System.Int32[])">
+            <summary>
+            Return the LayerMask from integer array.
+            <br></br> 由整數組傳回 LayerMask。
+            <para> Layers("true", 30, 31) </para>
+            </summary>
+            <param name="ignoreLayers"> The layer indices in LAYERS parameter will be ignored if true <br></br> 當 true 時 LAYERS 參數內的層級指數將會忽略 </param>
+            <param name="layers"> The layer indices <br></br> 層級指數 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean,System.Boolean,System.Int32[])">
+            <summary>
+            Return the RaycastHit from a position and direction.
+            <br></br> 由某個位置及方向傳回 RaycastHit。
+            <para> Raycast(transform.position, transform.forward, 3, true, 31) </para>
+            </summary>
+            <param name="origin"> Start position <br></br> 開始位置 </param>
+            <param name="direction"> Ray direction <br></br> 射線方向 </param>
+            <param name="length"> Ray length <br></br> 射線長度 </param>
+            <param name="withPriority"> The raycast will be checked by the order of Detect Layers <br></br> Raycast 將會根據 Detect Layers 的順序檢查 </param>
+            <param name="ignoreLayers"> The layer indices in LAYERS parameter will be ignored if true <br></br> 當 true 時 LAYERS 參數內的層級指數將會忽略 </param>
+            <param name="layers"> The layer indices <br></br> 層級指數 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.RaycastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean,System.Int32[])">
+            <summary>
+            Return a group of RaycastHit from a position and direction.
+            <br></br> 由某個位置及方向傳回一組 RaycastHit。
+            <para> RaycastAll(transform.position, transform.forward, 3, true, 31) </para>
+            </summary>
+            <param name="origin"> Start position <br></br> 開始位置 </param>
+            <param name="direction"> Ray direction <br></br> 射線方向 </param>
+            <param name="length"> Ray length <br></br> 射線長度 </param>
+            <param name="ignoreLayers"> The layer indices in LAYERS parameter will be ignored if true <br></br> 當 true 時 LAYERS 參數內的層級指數將會忽略 </param>
+            <param name="layers"> The layer indices <br></br> 層級指數 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.CopyComponent``1(``0,UnityEngine.GameObject)">
+            <summary>
+            Copy component to another gameobject.
+            <br></br> 複製組件至另一個物件。
+            <para> CopyComponent&lt;Rigidbody&gt;(oldRigidbody, newGameObject) </para>
+            </summary>
+            <typeparam name="T"> Component type <br></br> 組件類型 </typeparam>
+            <param name="original"> Component <br></br> 組件 </param>
+            <param name="destination"> Target object <br></br> 目標物件 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.ColorToTexture(System.Int32,System.Int32,UnityEngine.Color)">
+            <summary>
+            Return a Texture2D from color.
+            <br></br> 由顏色傳回 Texture2D。
+            <para> ColorToTexture(128, 128, Color.white) </para>
+            </summary>
+            <param name="width"> Texture width <br></br> 紋理闊度 </param>
+            <param name="height"> Texture height <br></br> 紋理高度 </param>
+            <param name="color"> Target color <br></br> 目標顏色 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.HorizontalForward(UnityEngine.Transform)">
+            <summary>
+            Return the horizontal forward direction of a transform.
+            <br></br> 傳回一個 Transform 的水平前方方向。
+            <para> HorizontalForward(transform) </para>
+            </summary>
+            <param name="transform"> Reference transform <br></br> 參考 Transform </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.HorizontalLookAt(UnityEngine.Transform,UnityEngine.Vector3,System.Boolean)">
+            <summary>
+            Look at a target horizontally.
+            <br></br> 水平望向一個目標。
+            <para> HorizontalLookAt(observer, target) </para>
+            </summary>
+            <param name="observer"> The observer <br></br> 觀察者 </param>
+            <param name="target"> Target point <br></br> 目標地點 </param>
+            <param name="reverse"> Reverse direction <br></br> 反轉方向 </param>
+        </member>
+        <member name="T:Votanic.Util.Struct">
+            <summary>
+            Unity struct converter.
+            <br></br> Unity struct 轉換器。
+            </summary>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToVector2(System.Single[])">
+            <summary>
+            Convert to Vector2.
+            <br></br> 轉換為二元向量。
+            <para> ToVector2(1, 2) </para>
+            </summary>
+            <param name="vector"> Numbers <br></br> 數字 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToVector3(System.Single[])">
+            <summary>
+            Convert to Vector3.
+            <br></br> 轉換為三元向量。
+            <para> ToVector3(1, 2, 3) </para>
+            </summary>
+            <param name="vector"> Numbers <br></br> 數字 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToVector4(System.Single[])">
+            <summary>
+            Convert to Vector4.
+            <br></br> 轉換為四元向量。
+            <para> ToVector4(1, 2, 3, 4) </para>
+            </summary>
+            <param name="vector"> Numbers <br></br> 數字 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToColor(System.Single[])">
+            <summary>
+            Convert to Color.
+            <br></br> 轉換為顏色。
+            <para> ToColor(1, 1, 1, 1) </para>
+            </summary>
+            <param name="color"> Numbers <br></br> 數字 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToQuaternion(System.Single[])">
+            <summary>
+            Convert to Quaternion.
+            <br></br> 轉換為四元素。
+            <para> ToQuaternion(0, 0, 0, 1) </para>
+            </summary>
+            <param name="quaternion"> Numbers <br></br> 數字 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToVector2(System.Int32[])">
+            <summary>
+            Convert to Vector2Int.
+            <br></br> 轉換為二元整數向量。
+            <para> ToVector2(1, 2) </para>
+            </summary>
+            <param name="vector"> Numbers <br></br> 數字 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToVector3(System.Int32[])">
+            <summary>
+            Convert to Vector3Int.
+            <br></br> 轉換為三元整數向量。
+            <para> ToVector3(1, 2, 3) </para>
+            </summary>
+            <param name="vector"> Numbers <br></br> 數字 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToFloatArray(UnityEngine.Vector2)">
+            <summary>
+            Convert from Vector2.
+            <br></br> 將二元向量轉換。
+            <para> FromVector2(Vector2.one) </para>
+            </summary>
+            <param name="vector"> Vector2 <br></br> 二元向量 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToFloatArray(UnityEngine.Vector3)">
+            <summary>
+            Convert from Vector3.
+            <br></br> 將三元向量轉換。
+            <para> ToFloatArray(Vector3.one) </para>
+            </summary>
+            <param name="vector"> Vector3 <br></br> 三元向量轉 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToFloatArray(UnityEngine.Vector4)">
+            <summary>
+            Convert from Vector4.
+            <br></br> 將四元向量轉換。
+            <para> ToFloatArray(Vector4.one) </para>
+            </summary>
+            <param name="vector"> Vector4 <br></br> 四元向量 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToFloatArray(UnityEngine.Color)">
+            <summary>
+            Convert from Color.
+            <br></br> 將顏色轉換。
+            <para> ToFloatArray(Color.white) </para>
+            </summary>
+            <param name="color"> Color <br></br> 顏色 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToFloatArray(UnityEngine.Color,System.Single)">
+            <summary>
+            Convert from Color and Alpha.
+            <br></br> 將顏色及不透明度轉換。
+            <para> ToFloatArray(Color.white, 1) </para>
+            </summary>
+            <param name="color"> Color <br></br> 顏色 </param>
+            <param name="alpha"> Alpha value <br></br> 不透明度 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToFloatArray(UnityEngine.Quaternion)">
+            <summary>
+            Convert from Quaternion.
+            <br></br> 將四元素轉換。
+            <para> ToFloatArray(Quaternion.identity) </para>
+            </summary>
+            <param name="quaternion"> Quaternion <br></br> 四元素 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToIntArray(UnityEngine.Vector2Int)">
+            <summary>
+            Convert from Vector2Int.
+            <br></br> 將二元整數向量轉換。
+            <para> ToIntArray(Vector2Int.one) </para>
+            </summary>
+            <param name="vector"> Vector2Int <br></br> 二元整數向量 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Struct.ToIntArray(UnityEngine.Vector3Int)">
+            <summary>
+            Convert from Vector3Int.
+            <br></br> 將三元整數向量轉換。
+            <para> ToIntArray(Vector3Int.one) </para>
+            </summary>
+            <param name="vector"> Vector3Int <br></br> 三元整數向量 </param>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.Util.Constant">
+            <summary>
+            The constants.
+            常數。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Constant.e">
+            <summary>
+            Natural e. <br></br> 自然數 e。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Constant.pi">
+            <summary>
+            ratio of a circle's circumference to its diameter. <br></br> 圓周率。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Constant.goldeRatio">
+            <summary>
+            Golden ratio. <br></br> 黃金比。
+            </summary>
+        </member>
+        <member name="T:Votanic.Util.Base">
+            <summary>
+            Base of number.
+            <br></br> 數字進制。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Base.Base16">
+            <summary>
+            Hex. <br></br> 十六進制。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Base.Base32">
+            <summary>
+            Base 32. <br></br> 三十二進制。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Base.Base36">
+            <summary>
+            Base 36. <br></br> 三十六進制。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Base.Base64">
+            <summary>
+            Base 64. <br></br> 六十四進制。
+            </summary>
+        </member>
+        <member name="F:Votanic.Util.Base.Base128">
+            <summary>
+            Base 128. <br></br> 一百二十八進制。
+            </summary>
+        </member>
+        <member name="M:Votanic.Util.Base.Format(System.Object,System.Int32,System.Int32)">
+            <summary>
+            Format a number to target digits and decimals.
+            <br></br> 將一個數的格式化為目標的整數位及小數位。
+            <para> Format(123.456, 4, 0) </para>
+            </summary>
+            <param name="value"> The number <br></br> 數 </param>
+            <param name="digits"> Number of digits (-1 = Ignore this part) <br></br> 整數數目（-1 為忽略這部份） </param>
+            <param name="decimals">　Number of decimals (-1 = Ignore this part) <br></br> 小數數目（-1 為忽略這部份） </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Base.ToBase10(System.String,System.UInt32)">
+            <summary>
+            Convert a number from its base to Decimal.
+            <br></br> 將一個數由它的進制轉為十進制。
+            <para> ToBase10("-1001.01", 2) </para>
+            </summary>
+            <param name="value"> The number <br></br> 數字 </param>
+            <param name="fromBase"> Original base <br></br> 原進制 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Base.FromBase10(System.Double,System.UInt32)">
+            <summary>
+            Convert a decimal number to other base.
+            <br></br> 將一個十進制數字轉為其他進制。
+            <para> FromBase10(-123.456, 16) </para>
+            </summary>
+            <param name="value"> The number <br></br> 數字 </param>
+            <param name="toBase"> Target base <br></br> 目標進制 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Base.Convert(System.Object,System.UInt32,System.UInt32)">
+            <summary>
+            Convert a number from its base to other base.
+            <br></br> 將一個數字為它的進制轉為其他進制。
+            <para> Convert("-123.456", 10, 16) </para>
+            </summary>
+            <param name="value"> The number <br></br> 數字 </param>
+            <param name="fromBase"> Original base <br></br> 原進制 </param>
+            <param name="toBase"> Target base <br></br> 目標進制 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Base.Compress(System.Object,System.UInt32)">
+            <summary>
+            Compress a number by Base128 format.
+            <br></br> 將一個數字以一百二十八進制格式壓縮。
+            <para> Compress(1.01) </para>
+            </summary>
+            <param name="value"> The number <br></br> 數字 </param>
+            <param name="fromBase"> Original base <br></br> 原進制 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Util.Base.Decompress(System.String,System.UInt32)">
+            <summary>
+            Decompress a number from Base128 format.
+            <br></br> 將一個數字以一百二十八進制格式解壓。
+            <para> Decompress(1.1) </para>
+            </summary>
+            <param name="value"> The number <br></br> 數字 </param>
+            <param name="toBase"> Target base <br></br> 目標進制 </param>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.Parameter">
+            <summary>
+            The inheritable class for passing parameter to Unity Event.
+            用於傳遞參數至 Unity Event 的可繼承的類別。
+            </summary>
+        </member>
+        <member name="F:Votanic.Parameter.boolean">
+            <summary>
+            Boolean parameter. <br></br> 布林參數。
+            </summary>
+        </member>
+        <member name="F:Votanic.Parameter.integer">
+            <summary>
+            Integer parameter. <br></br> 整數參數。
+            </summary>
+        </member>
+        <member name="F:Votanic.Parameter.single">
+            <summary>
+            Float parameter. <br></br> 浮點數參數。
+            </summary>
+        </member>
+        <member name="F:Votanic.Parameter.text">
+            <summary>
+            String parameter. <br></br> 字串參數。
+            </summary>
+        </member>
+        <member name="F:Votanic.Parameter.objectList">
+            <summary>
+            System object parameter list. <br></br> 系統物件參數列表。
+            </summary>
+        </member>
+        <member name="F:Votanic.Parameter.unityObjectList">
+            <summary>
+            Unity object parameter list. <br></br> Unity 物件參數列表。
+            </summary>
+        </member>
+        <member name="F:Votanic.Parameter.persistentPriority">
+            <summary>
+            Persistent listeners priority. <br></br> 非實時回調函數優先。
+            </summary>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="boolean"> Boolean parameter <br></br> 布林參數 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="integer"> Integer parameter <br></br> 整數參數 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Single,System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="single"> Float parameter <br></br> 浮點數參數 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.String,System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="text"> String parameter <br></br> 字串參數 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Collections.Generic.List{System.Object},System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="objects"> System object parameter list <br></br> 系統物件參數列表 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Collections.Generic.List{UnityEngine.Object},System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="unityObjects"> Unity object parameter list <br></br> Unity 物件參數列表 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Boolean,System.Int32,System.Single,System.String,System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="boolean"> Boolean parameter <br></br> 布林參數 </param>
+            <param name="integer"> Integer parameter <br></br> 整數參數 </param>
+            <param name="single"> Float parameter <br></br> 浮點數參數 </param>
+            <param name="text"> String parameter <br></br> 字串參數 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{UnityEngine.Object},System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="objects"> System object parameter list <br></br> 系統物件參數列表 </param>
+            <param name="unityObjects"> Unity object parameter list <br></br> Unity 物件參數列表 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="M:Votanic.Parameter.#ctor(System.Boolean,System.Int32,System.Single,System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.List{UnityEngine.Object},System.Boolean)">
+            <summary>
+            Declare a parameter.
+            <br></br> 宣告一個參數。
+            </summary>
+            <param name="boolean"> Boolean parameter <br></br> 布林參數 </param>
+            <param name="integer"> Integer parameter <br></br> 整數參數 </param>
+            <param name="single"> Float parameter <br></br> 浮點數參數 </param>
+            <param name="text"> String parameter <br></br> 字串參數 </param>
+            <param name="objects"> System object parameter list <br></br> 系統物件參數列表 </param>
+            <param name="unityObjects"> Unity object parameter list <br></br> Unity 物件參數列表 </param>
+            <param name="persistentPriority"> Persistent listeners priority <br></br> 非實時回調函數優先 </param>
+        </member>
+        <member name="T:Votanic.ParameterEvent">
+            <summary>
+            The type of Unity Event that can pass parameters.
+            <br></br> 可傳遞參數的 Unity Event 類型。
+            </summary>
+        </member>
+        <member name="M:Votanic.ParameterEvent.AddListener(UnityEngine.Events.UnityAction)">
+            <summary>
+            Add a no parameter runtime callback as listener.
+            <br></br> 新增一個不含參數的實時回調函數為監聽器。
+            <para> AddListener(Ping) </para>
+            </summary>
+            <param name="unityAction"> The Method <br></br> 方法 </param>
+        </member>
+        <member name="M:Votanic.ParameterEvent.AddListener(UnityEngine.Events.UnityAction{Votanic.Parameter})">
+            <summary>
+            Add a with parameter runtime callback as listener.
+            <br></br> 新增一個含有參數的實時回調函數為監聽器。
+            <para> AddListener(Ping) </para>
+            </summary>
+            <param name="unityAction"> The Method <br></br> 方法 </param>
+        </member>
+        <member name="M:Votanic.ParameterEvent.RemoveListener(UnityEngine.Events.UnityAction)">
+            <summary>
+            Remove the last no parameter runtime callback.
+            <br></br> 移除最新一個不含參數的實時回調函數。
+            <para> RemoveListener(Ping) </para>
+            </summary>
+            <param name="unityAction"> The Method <br></br> 方法 </param>
+        </member>
+        <member name="M:Votanic.ParameterEvent.RemoveListener(UnityEngine.Events.UnityAction{Votanic.Parameter})">
+            <summary>
+            Remove the last with parameter runtime callback.
+            <br></br> 移除最新一個含有參數的實時回調函數。
+            <para> RemoveListener(Ping) </para>
+            </summary>
+            <param name="unityAction"> The Method <br></br> 方法 </param>
+        </member>
+        <member name="M:Votanic.ParameterEvent.RemoveAllListeners(System.Boolean,System.Boolean)">
+            <summary>
+            Remove all the runtime callbacks.
+            <br></br> 移除所有實時回調函數。
+            </summary>
+            <param name="noParamter"> Remove all no parameter runtime callbacks <br></br> 移除所有不含參數的實時回調函數 </param>
+            <param name="withParamter"> Remove all with parameter runtime callbacks <br></br> 移除所有含有參數的實時回調函數 </param>
+        </member>
+        <member name="M:Votanic.ParameterEvent.RemoveAllListeners">
+            <summary>
+            Remove all the runtime callbacks.
+            <br></br> 移除所有實時回調函數。
+            </summary>
+        </member>
+        <member name="M:Votanic.ParameterEvent.Invoke(Votanic.Parameter)">
+            <summary>
+            Invoke all unity actions.
+            <br></br> 呼叫所有 Unity 動作。
+            <para> Invoke(new Parameter()) </para>
+            </summary>
+            <param name="parameter"> Parameter <br></br> 參數 </param>
+        </member>
+        <member name="T:Votanic.Element">
+            <summary>
+            The base class of Votanic elements.
+            <br></br> Votanic 元素的底層類別。
+            </summary>
+        </member>
+        <member name="F:Votanic.Element.name">
+            <summary>
+            Name field. <br></br> 名稱欄。
+            </summary>
+        </member>
+        <member name="M:Votanic.Element.op_Implicit(Votanic.Element)~System.Boolean">
+            <summary>
+            Return true if the element is not a null reference.
+            <br></br> 當元素不是空的參考時傳回 true。
+            <para> if (vElement) ... </para>
+            </summary>
+            <param name="exists"></param>
+        </member>
+        <member name="M:Votanic.Element.Equals(System.String,System.Boolean)">
+            <summary>
+            Return true if the element name is equals to NAME parameter.
+            <br></br> 當 NAME 參數與元素名稱相同時傳回 true。
+            <para> Element v = vElements.Find(Equals("NAME")); </para>
+            </summary>
+            <param name="name"> Checking name <br></br> 檢查名稱 </param>
+            <param name="caseSensitive"> Check with case sensitive <br></br> 檢查大小寫 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Element.Contains(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Return true if the NAME parameter or element name containes others.
+            <br></br> 當 NAME 參數或元素名稱包含對方時傳回 true。
+            <para> Element v = vElements.Find(Contains("NAME")); </para>
+            </summary>
+            <param name="name"> Checking name <br></br> 檢查名稱 </param>
+            <param name="singleSide"> Only check element name contains NAME parameter <br></br> 只檢查元素名義包含 NAME 參數 </param>
+            <param name="caseSensitive"> Check with case sensitive <br></br> 檢查大小寫 </param>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.Element.MonoBehaviour">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.Element.MonoBehaviour.Equals(System.String,System.Boolean)">
+            <summary>
+            Return true if the monobehaviour name is equals to NAME parameter.
+            <br></br> 當 NAME 參數與 MonoBehaviour 名稱相同時傳回 true。
+            <para> GameObject g = vGameObjects.Find(Element.MonoBehaviour.Equals("NAME")); </para>
+            </summary>
+            <param name="name"> Checking name <br></br> 檢查名稱 </param>
+            <param name="caseSensitive"> Check with case sensitive <br></br> 檢查大小寫 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Element.MonoBehaviour.Contains(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Return true if the NAME parameter or monobehaviour name containes others.
+            <br></br> 當 NAME 參數或 MonoBehaviour 名稱包含對方時傳回 true。
+            <para> GameObject g = vGameObjects.Find(Element.MonoBehaviour.Contains("NAME")); </para>
+            </summary>
+            <param name="name"> Checking name <br></br> 檢查名稱 </param>
+            <param name="singleSide"> Only check element name contains NAME parameter <br></br> 只檢查元素名義包含 NAME 參數 </param>
+            <param name="caseSensitive"> Check with case sensitive <br></br> 檢查大小寫 </param>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.Element.String">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Votanic.Element.String.Equals(System.String,System.Boolean)">
+            <summary>
+            Return true if the text variable is equals to TEXT parameter.
+            <br></br> 當 TEXT 參數與文字變數相同時傳回 true。
+            <para> int s = vTexts.FindIndex(Element.String.Equals("TEXT")); </para>
+            </summary>
+            <param name="text"> Checking text <br></br> 檢查文字 </param>
+            <param name="caseSensitive"> Check with case sensitive <br></br> 檢查大小寫 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.Element.String.Contains(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Return true if the TEXT parameter or text variable containes others.
+            <br></br> 當 TEXT 參數或文字變數包含對方時傳回 true。
+            <para> int s = vTexts.FindIndex(Element.String.Contains("TEXT")); </para>
+            </summary>
+            <param name="text"> Checking text <br></br> 檢查文字 </param>
+            <param name="singleSide"> Only check element name contains TEXT parameter <br></br> 只檢查元素名義包含 TEXT 參數 </param>
+            <param name="caseSensitive"> Check with case sensitive <br></br> 檢查大小寫 </param>
+            <returns></returns>
+        </member>
+        <member name="T:Votanic.FileLocation">
+            <summary>
+            The relative folder location of files.
+             <br></br> 檔案的相對文件夾位置。
+            </summary>
+        </member>
+        <member name="F:Votanic.FileLocation.AbsolutePath">
+            <summary>
+            Absolute path. <br></br> 絕對路徑。
+            </summary>
+        </member>
+        <member name="F:Votanic.FileLocation.VotanicFolder">
+            <summary>
+            The Assets/Votanic folder in the project. <br></br> 項目的 Assets/Votanic 文件夾。
+            </summary>
+        </member>
+        <member name="F:Votanic.FileLocation.ExternalResourcesFolder">
+            <summary>
+            "../Resources" folder. <br></br> "../Resources" 文件夾。
+            </summary>
+        </member>
+        <member name="F:Votanic.FileLocation.DataPath">
+            <summary>
+            Unity Application.dataPath folder. In editor as the Assets folder. <br></br> Unity Application.dataPath 路徑。在編輯器即 Assets 文件夾。
+            </summary>
+        </member>
+        <member name="F:Votanic.FileLocation.StreamingAssetsPath">
+            <summary>
+            Unity Application.streamingAssetsPath folder. <br></br> Unity Application.streamingAssetsPath 路徑。
+            </summary>
+        </member>
+        <member name="F:Votanic.FileLocation.PersistentDataPath">
+            <summary>
+            Unity Application.persistentDataPath folder. <br></br> Unity Application.persistentDataPath 路徑。
+            </summary>
+        </member>
+        <member name="T:Votanic.ReadWrite">
+            <summary>
+            Read write static methods.
+            <br></br> 讀寫的靜態方法。
+            </summary>
+        </member>
+        <member name="M:Votanic.ReadWrite.CreateDirectory(System.String)">
+            <summary>
+            Create a directory.
+            <br></br> 創建一個目錄。
+            <para> CreateDirectory("C:/abc/efg"); </para>
+            </summary>
+            <param name="directory"> Target location <br></br> 目標位置 </param>
+        </member>
+        <member name="M:Votanic.ReadWrite.DeleteDirectory(System.String,System.Boolean)">
+            <summary>
+            Delete an existed directory.
+            <br></br> 刪除一個存在的目錄。
+            <para> DeleteDirectory("C:/abc/efg"); </para>
+            </summary>
+            <param name="directory"> Target location <br></br> 目標位置 </param>
+            <param name="recursive"> Delete subdirectories if ture <br></br> 當 true 時刪除子目錄 </param>
+        </member>
+        <member name="M:Votanic.ReadWrite.DirectoryExists(System.String)">
+            <summary>
+            Return true if the directory exists.
+            <br></br> 當目錄存在時傳回 true。
+            <para> if (DirectoryExists("C:/abc/efg")) ... </para>
+            </summary>
+            <param name="directory"> Target location <br></br> 目標位置 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.FileExists(System.String)">
+            <summary>
+            Return true if the file exists.
+            <br></br> 當檔案存在時傳回 true。
+            <para> if (FileExists("C:/abc/efg/text.txt")) ... </para>
+            </summary>
+            <param name="path"> Target file <br></br> 目標檔案 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.FileCount(System.String,System.IO.SearchOption,System.String[])">
+            <summary>
+            Get file infos from a path.
+            <br></br> 由路經取得檔案資訊。
+            <para> FileInfo[] files = FileCount("C:/abc/efg/", SearchOption.AllDirectories, "*.txt") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <param name="searchOption"> Search option <br></br> 搜尋方式 </param>
+            <param name="searchPattern"> Pattern of file name <br></br> 搜尋關鍵字眼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.DirectoryCount(System.String,System.IO.SearchOption,System.String[])">
+            <summary>
+            Get directory infos from a path.
+            <br></br> 由路經取得目錄資訊。
+            <para> DirectoryInfo[] directories = DirectoryCount("C:/abc/efg/", SearchOption.AllDirectories, "xyz") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <param name="searchOption"> Search option <br></br> 搜尋方式 </param>
+            <param name="searchPattern"> Pattern of file name <br></br> 搜尋關鍵字眼 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.DirectoryName(System.String)">
+            <summary>
+            Return the directory of a path.
+            <br></br> 傳回路經的目錄。
+            <para> DirectoryName("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.FileName(System.String,System.Boolean)">
+            <summary>
+            Return the file name of a path.
+            <br></br> 傳回路經的檔案名稱。
+            <para> FileName("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <param name="extension"> Return with extension if true <br></br> 當 true 時同時傳回副檔名 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.Extension(System.String)">
+            <summary>
+            Return the extension of a path.
+            <br></br> 傳回路經的副檔名。
+            <para> Extension("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.RealPath(System.String,Votanic.FileLocation)">
+            <summary>
+            Return the full name of a path.
+            <br></br> 傳回路經的全名。
+            <para> RealPath("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <param name="sourcePath"> Source path <br></br> 路徑來源 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.FullPath(System.String)">
+            <summary>
+            Return the full name of a path.
+            <br></br> 傳回路經的全名。
+            <para> FullPath("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.FullPathToArray(System.String)">
+            <summary>
+            Return the directory, file name and extension of a path.
+            <br></br> 傳回路經的目錄、檔案名稱及副檔名。
+            <para> FullPathToArray("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Target location <br></br> 目標位置 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Votanic.ReadWrite.ReadLines(System.String,System.Text.Encoding)">
+            <summary>
+            Return the string array in a file.
+            <br></br> 由檔案傳回字串列。
+            <para> ReadLines("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="format"> Encoding format <br></br> 編碼方式
+            <para> Default: Null = UTF8 </para></param>
+        </member>
+        <member name="M:Votanic.ReadWrite.ReadText(System.String,System.Text.Encoding)">
+            <summary>
+            Return the string in a file.
+            <br></br> 由檔案傳回字串。
+            <para> ReadText("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="format"> Encoding format <br></br> 編碼方式
+            <para> Default: Null = UTF8 </para></param>
+        </member>
+        <member name="M:Votanic.ReadWrite.ReadBytes(System.String)">
+            <summary>
+            Return the bytes in a file.
+            <br></br> 由檔案傳回字節。
+            <para> ReadBytes("C:/abc/efg/text.txt") </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+        </member>
+        <member name="M:Votanic.ReadWrite.WriteLines(System.String,System.String[])">
+            <summary>
+            Write string lines to a file.
+            <br></br> 將字串列寫入檔案。
+            <para> WriteLines("C:/abc/efg/text.txt", new string[]{ "abc", "efg", "123" }) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="data"> The string array <br></br> 字串列 </param>
+        </member>
+        <member name="M:Votanic.ReadWrite.WriteLines(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Write string lines to a file.
+            <br></br> 將字串列寫入檔案。
+            <para> WriteLines("C:/abc/efg/text.txt", new List&lt;string&gt;() { "abc", "efg", "123" }) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="data"> The string list <br></br> 字串列 </param>
+        </member>
+        <member name="M:Votanic.ReadWrite.WriteText(System.String,System.String)">
+            <summary>
+            Write strings to a file.
+            <br></br> 將字串寫入檔案。
+            <para> WriteText("C:/abc/efg/text.txt", "123") </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="data"> The string <br></br> 字串 </param>
+        </member>
+        <member name="M:Votanic.ReadWrite.WriteBytes(System.String,System.Byte[])">
+            <summary>
+            Write bytes to a file.
+            <br></br> 將字節寫入檔案。
+            <para> WriteBytes("C:/abc/efg/text.txt", byteArray) </para>
+            </summary>
+            <param name="path"> Path of file <br></br> 檔案路徑 </param>
+            <param name="data"> The data bytes <br></br> 字節 </param>
+        </member>
+        <member name="T:Votanic.ReadOnly">
+            <summary>
+            Make the variable on Inspector as Read Only.
+            <br></br> 使變數在 Inspector 上顯示為唯讀。
+            <para> [ReadOnly] </para>
+            </summary>
+        </member>
+        <member name="T:Votanic.ReadOnlyOnPlay">
+            <summary>
+            Make the variable on Inspector as Read Only on play mode.
+            <br></br> 使變數在 Play 模式時，在 Inspector 上顯示為唯讀。
+            <para> [ReadOnlyOnPlay] </para>
+            </summary>
+        </member>
+    </members>
+</doc>

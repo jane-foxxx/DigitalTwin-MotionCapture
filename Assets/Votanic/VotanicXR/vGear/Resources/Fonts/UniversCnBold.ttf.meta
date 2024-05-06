@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: ed01fa0265e2bf24db16746319dd7909
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Univers
+  fontNames:
+  - Univers
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c8095ec2e825ace4dbdf3e9330bd613d, type: 3}
+  - {fileID: 12800000, guid: db0218c83a59d8d47b6dc60de3f6a3c2, type: 3}
+  - {fileID: 12800000, guid: 5c76699b792c6324a934ab45c1fee7b6, type: 3}
+  - {fileID: 12800000, guid: ca95bd9ecdd98da4ba2be1e4121a2038, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

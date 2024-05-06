@@ -1,0 +1,283 @@
+{
+  "action_sets": [
+    {
+      "name": "/actions/main",
+      "usage": "leftright"
+    }
+  ],
+  "actions": [
+    {
+      "name": "/actions/main/in/RightTriggerT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightTouchPadT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightGripT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightMenuT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightBackT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightJoystickT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightTrigger",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightTouchPad",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightPadForce",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/RightGrip",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightGripForce",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/RightMenu",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightBack",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightJoystick",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/RightThumb1",
+      "requirement": "mandatory",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/main/in/RightThumb2",
+      "requirement": "mandatory",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/main/in/RightFinger1",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/RightFinger2",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/RightFinger3",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/RightFinger4",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/LeftTriggerT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftTouchPadT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftGripT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftMenuT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftBackT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftJoystickT",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftTrigger",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftTouchPad",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftPadForce",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/LeftGrip",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftGripForce",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/LeftMenu",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftBack",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftJoystick",
+      "requirement": "mandatory",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/main/in/LeftThumb1",
+      "requirement": "mandatory",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/main/in/LeftThumb2",
+      "requirement": "mandatory",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/main/in/LeftFinger1",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/LeftFinger2",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/LeftFinger3",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/LeftFinger4",
+      "requirement": "mandatory",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/main/in/RightVibration",
+      "requirement": "mandatory",
+      "type": "vibration"
+    },
+    {
+      "name": "/actions/main/in/LeftVibration",
+      "requirement": "mandatory",
+      "type": "vibration"
+    },
+    {
+      "name": "/actions/main/in/HandPoseLeft",
+      "requirement": "mandatory",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/main/in/HandPoseRight",
+      "requirement": "mandatory",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/main/in/HandSkeletonLeft",
+      "requirement": "mandatory",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
+    },
+    {
+      "name": "/actions/main/in/HandSkeletonRight",
+      "requirement": "mandatory",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    }
+  ],
+  "default_bindings": [
+    {
+      "binding_url": "bindings_knuckles.json",
+      "controller_type": "knuckles"
+    },
+    {
+      "binding_url": "bindings_generic.json",
+      "controller_type": "generic"
+    },
+    {
+      "binding_url": "bindings_gamepad.json",
+      "controller_type": "gamepad"
+    },
+    {
+      "binding_url": "bindings_vive_controller.json",
+      "controller_type": "vive_controller"
+    },
+    {
+      "binding_url": "bindings_cosmos.json",
+      "controller_type": "vive_cosmos_controller"
+    },
+    {
+      "binding_url": "bindings_knuckles.json",
+      "controller_type": "knuckles"
+    },
+    {
+      "binding_url": "bindings_touch.json",
+      "controller_type": "oculus_touch"
+    },
+    {
+      "binding_url": "bindings_holographic.json",
+      "controller_type": "holographic_controller"
+    },
+    {
+      "binding_url": "bindings_knuckles_ev1.json",
+      "controller_type": "knuckles_ev1"
+    }
+  ],
+  "localization": [
+    
+  ]
+}
