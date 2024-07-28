@@ -25,7 +25,7 @@ To build an executable file that opens the camera and runs on any computer, rega
 This process can create an executable file that can be run on any computer without Python installation.
 ![image](https://github.com/user-attachments/assets/3ff0465c-4440-4abc-aa46-e6ee82b8dc79)
 
-** Remember to change python file/name to your own work
+*Remember to change python file/name to your own work*
  ![image](https://github.com/user-attachments/assets/ec010be2-bd04-4280-80a2-6e1f11646c80)
 
  
