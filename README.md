@@ -3,12 +3,12 @@
 
 Brief Guideline of DigitalTwin_MoitonCapture Project
 1.	Software Used
- •	Python 3.11
- •	Unity 2020.3.21f1
- •	VotanicXR 2020SDK
-2.	Python Environment Setting for Mocap
- •	Python File is used to open camera and capture frame image of video.
- •	Utilize python package such as OpenCV/Mediapipe to capture and identify human pose information, then transfer pose data to unity through UDP.
+   * Python 3.11
+   * Unity 2020.3.21f1
+   * VotanicXR 2020SDK
+3.	Python Environment Setting for Mocap
+   * Python File is used to open camera and capture frame image of video.
+   * Utilize python package such as OpenCV/Mediapipe to capture and identify human pose information, then transfer pose data to unity through UDP.
 ![image](https://github.com/user-attachments/assets/376de5d4-6707-4fa2-9f42-c72cd3e441da)
 
  
@@ -25,7 +25,7 @@ To build an executable file that opens the camera and runs on any computer, rega
 This process can create an executable file that can be run on any computer without Python installation.
 ![image](https://github.com/user-attachments/assets/3ff0465c-4440-4abc-aa46-e6ee82b8dc79)
 
-* Remember to change python file/name to your own work
+** Remember to change python file/name to your own work
  ![image](https://github.com/user-attachments/assets/ec010be2-bd04-4280-80a2-6e1f11646c80)
 
  
