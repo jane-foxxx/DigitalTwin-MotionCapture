@@ -9,6 +9,7 @@
 ## 2.	Python Environment Setting for Mocap
    * Python File is used to open camera and capture frame image of video.
    * Utilize python package such as OpenCV/Mediapipe to capture and identify human pose information, then transfer pose data to unity through UDP.
+     
 ![image](https://github.com/user-attachments/assets/376de5d4-6707-4fa2-9f42-c72cd3e441da)
 
  
